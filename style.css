@@ -207,3 +207,14 @@
 	width: 12px;
 	background-color: rgb(240, 242, 243);
 }
+
+@media screen and (min-width: 1920px){
+   .screenalign{
+      display: flex;
+      justify-content: center;
+      background-color: black;
+   
+    }
+    
+
+}
