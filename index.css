@@ -7,6 +7,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	margin: 0;
+	list-style: none;
+	text-decoration: none;
 }
 
 body{
@@ -27,14 +29,37 @@ background-size: cover;
 	color: burlywood;
 	background-color: rgba(0, 0, 0, 0.7);
 	text-shadow: 2px 2px 2px #076be5;
-	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.5),
-		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
+	
 }
 
 .himg img {
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
+}
+
+.navlink {
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+.navlink li{
+	color: aliceblue;
+	align-content: flex-start;
+	padding: 5px;
+	cursor: pointer;
+
+
+}
+
+.navlink a{
+ 
+	color: aliceblue;
+	
+
 }
 
 .dinapatchi {
