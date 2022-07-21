@@ -9,6 +9,13 @@
 	margin: 0;
 }
 
+body{
+background-color: rgb(26, 70, 110);
+background-image: url(./moonpic4.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
 
 
 .headline {
@@ -18,21 +25,27 @@
 	padding: 10px;
 	font-weight: 600;
 	color: burlywood;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.5);
 	text-shadow: 2px 2px 2px #076be5;
 	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.5),
 		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
 }
+
 .himg img {
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
 }
 
-
+.dinapatchi {
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+}
 
 .pagaliravu-valarpirai , .pagaliravu-theipirai{
-	background-color: black;
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -43,18 +56,29 @@
 		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
 }
 
+.talippu1 {
+   min-width: 190px;
+	text-align: center;
+	font-weight: 400;
+	color: burlywood;
+	padding: 20px;
+}
+
+
 
 .dbl {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+   flex-direction: column;
 	gap: 10px;
 	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.5),
 		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
 	border-radius: 50%;
-	width: 180px;
-	height: 180px;
+	width: 190px;
+	height: 190px;
 }
+
 .pagaliravu-sunday,
 .pagaliravu-monday,
 .pagaliravu-tuesday,
@@ -62,7 +86,7 @@
 .pagaliravu-thursday,
 .pagaliravu-friday,
 .pagaliravu-saturday {
-	background-color: black;
+	
 	border: 1px solid burlywood;
 }
 
@@ -72,8 +96,8 @@
 }
 
 .table img {
-	height: 60px;
-	width: 60px;
+	height: 80px;
+	width: 80px;
 	border-radius: 50%;
 }
 
@@ -92,16 +116,17 @@
    margin-top: 0px;
 }
 
+.talippud , .talippun {
+   display: flex;
+   font-size: large;
+}
+
 
 .படுபட்சி {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: row;
-	text-align: center;
 	color: azure;
-	font-size: large;
-	background-color: rgba(4, 4, 4);
 }
 .படுபட்சி img {
 	height: 60px;
@@ -118,27 +143,18 @@
 	font-weight: 400;
 	color: rgb(131, 167, 177);
 }
-.talippu1 {
-	text-align: center;
-	font-weight: 400;
-	color: burlywood;
-	padding: 20px;
-}
 
 @media screen and (min-width: 999px) {
 	.dinapatchi {
 		min-height: 80vh;
 		min-width: 100vw;
-		background-color: black;
+		
 		display: flex;
 		justify-content: center;
 		gap: 50px;
 		align-items: center;
       flex-direction: column;
-      background-image: url(./moonpic2.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+     
       
 	}
    .pagaliravu-valarpirai , .pagaliravu-theipirai{
