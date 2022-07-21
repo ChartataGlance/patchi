@@ -25,7 +25,7 @@ background-size: cover;
 	padding: 10px;
 	font-weight: 600;
 	color: burlywood;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
 	text-shadow: 2px 2px 2px #076be5;
 	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.5),
 		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
@@ -38,10 +38,17 @@ background-size: cover;
 }
 
 .dinapatchi {
-   background-color: rgba(0, 0, 0, 0.5);
+   background-color: rgba(0, 0, 0, 0.7);
    display: flex;
    justify-content: center;
    flex-direction: row;
+}
+
+.dina{
+	color: bisque;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 10px;
 }
 
 .pagaliravu-valarpirai , .pagaliravu-theipirai{
@@ -52,12 +59,12 @@ background-size: cover;
    flex-direction: column;
 	box-shadow: 10px 10px 10px -5px rgba(215, 209, 209, 0.2),
 		-10px -9px 10px -5px rgba(220, 210, 210, 0.2),
-		inset 27px 27px 20px -15px rgba(237, 235, 235, 0.5),
-		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
+		inset 27px 27px 20px -15px rgba(237, 235, 235, 0.3),
+		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.3);
 }
 
 .talippu1 {
-   min-width: 190px;
+   min-width: 60px;
 	text-align: center;
 	font-weight: 400;
 	color: burlywood;
@@ -71,11 +78,11 @@ background-size: cover;
 	align-items: center;
 	justify-content: center;
    flex-direction: column;
-	gap: 10px;
+	
 	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.5),
 		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
 	border-radius: 50%;
-	width: 190px;
+	width:  190px;
 	height: 190px;
 }
 
@@ -101,17 +108,17 @@ background-size: cover;
 	border-radius: 50%;
 }
 
-.talippud img {
-	height: 60px;
-	width: 60px;
+.talippud img{
+	height: 75px;
+	width:  75px;
 	border-radius: 50%;
    margin-bottom: 0px;
 }
 
 
-.talippun img {
-	height: 60px;
-	width: 60px;
+.talippun img{
+	height: 75px;
+	width:  75px;
 	border-radius: 50%;
    margin-top: 0px;
 }
@@ -136,19 +143,30 @@ background-size: cover;
 .talippud {
 	text-align: center;
 	font-weight: 400;
+   align-items: center;
 	color: rgb(131, 167, 177);
+	box-shadow: inset 27px 27px 20px -15px rgba(236, 230, 230, 0.5),
+		inset -21px -27px 20px -15px rgba(232, 225, 225, 0.5);
+		border-radius: 10%;
+		
+	
+	
 }
 .talippun {
 	text-align: center;
 	font-weight: 400;
+	align-items: center;
 	color: rgb(131, 167, 177);
+	box-shadow: inset 27px 27px 20px -15px rgba(16, 16, 16, 0.5),
+		inset -21px -27px 20px -15px rgba(4, 4, 4, 0.5);
+	border-radius: 10%;
+	
 }
 
 @media screen and (min-width: 999px) {
 	.dinapatchi {
 		min-height: 80vh;
 		min-width: 100vw;
-		
 		display: flex;
 		justify-content: center;
 		gap: 50px;
