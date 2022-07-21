@@ -18,6 +18,12 @@ background-repeat: no-repeat;
 background-size: cover;
 
 }
+.datetime{
+   font-size: x-large;
+   padding: 15px;
+   color: aliceblue;
+   text-align: center;
+}
 
 
 .headline {

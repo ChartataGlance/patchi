@@ -1,3 +1,4 @@
+/** @format */
 
 const timeElement = document.querySelector(".time");
 const dateElement = document.querySelector(".date");
@@ -6,15 +7,18 @@ const dateElement = document.querySelector(".date");
  * @param {Date} date
  */
 function formateTime(date) {
-	const hours = date.getUTCHours() ;
-	const minutes = date.getUTCMinutes();
-	const seconds = date.getUTCSeconds();
+	const hours12 = date.getHours() % 12 || 12;
+	const minutes = date.getMinutes();
+	const seconds = date.getSeconds();
    
 
-	return `UTC ${hours.toString().padStart(2, "0")}:${minutes
+	const isAm = date.getHours() < 12;
+
+	return `${hours12.toString().padStart(2, "0")}:${minutes
 		.toString()
-		.padStart(2, "0")} ${seconds.toString().padStart(2, "0")}
-	`;
+		.padStart(2, "0")} ${seconds.toString().padStart(2, "0")} ${
+		isAm ? "AM" : "PM"
+	}`;
 }
 
 /**
