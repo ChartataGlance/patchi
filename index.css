@@ -88,10 +88,11 @@ background-size: cover;
 	justify-content: center;
 	align-items: center;
    flex-direction: column;
-	box-shadow: 10px 10px 10px -5px rgba(215, 209, 209, 0.2),
-		-10px -9px 10px -5px rgba(220, 210, 210, 0.2),
-		inset 27px 27px 20px -15px rgba(237, 235, 235, 0.3),
-		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.3);
+	box-shadow: 10px 10px 10px -5px rgba(215, 209, 209, 0),
+		-10px -9px 10px -5px rgba(220, 210, 210, 0),
+		inset 27px 27px 20px -15px rgba(237, 235, 235, 0.2),
+		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.2);
+		border-radius: 20px;
 }
 
 
@@ -111,7 +112,6 @@ background-size: cover;
 	align-items: center;
 	justify-content: center;
    flex-direction: column;
-	
 	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.5),
 		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
 	border-radius: 50%;
@@ -127,7 +127,10 @@ background-size: cover;
 .pagaliravu-friday,
 .pagaliravu-saturday {
 	
-	border: 1px solid burlywood;
+	border: 0px solid burlywood;
+	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.1),
+		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.1);
+		border-radius: 20px;
 }
 
 .kilamai {
@@ -135,25 +138,19 @@ background-size: cover;
 	text-align: center;
 }
 
-.table img {
-	height: 80px;
-	width: 60px;
-	border-radius: 50%;
-}
-
 .talippud img{
-	height: 99px;
+	height: 95px;
 	width:  66px;
 	border-radius: 50%;
-   margin-bottom: 0px;
+   
 }
 
 
 .talippun img{
-	height: 99px;
+	height: 95px;
 	width:  66px;
 	border-radius: 50%;
-   margin-top: 0px;
+   
 }
 
 .talippud , .talippun {
@@ -180,7 +177,7 @@ background-size: cover;
    align-items: center;
 	
 	color: rgb(131, 167, 177);
-	box-shadow: inset 27px 27px 20px -15px rgba(236, 230, 230, 0.5),
+	box-shadow: inset 27px 27px 20px -15px rgba(236, 230, 230, 0.9),
 		inset -21px -27px 20px -15px rgba(232, 225, 225, 0.2);
 		border-radius: 50%;
 		
@@ -194,7 +191,7 @@ background-size: cover;
 	color: rgb(131, 167, 177);
 	box-shadow: inset 27px 27px 20px -15px rgba(16, 16, 16, 0.5),
 		inset -21px -27px 20px -15px rgba(4, 4, 4, 0.5);
-	border-radius: 25%;
+	border-radius: 50%;
 	
 }
 
