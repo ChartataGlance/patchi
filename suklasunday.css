@@ -11,11 +11,15 @@ body{
    min-height: 100vh;
    background-color: black;
 }
+
 .datetime{
    font-size: xx-large;
    padding: 5px;
    color: aliceblue;
    text-align: center;
+}
+.neram{
+	color: aliceblue;
 }
 
 .headline {
@@ -29,11 +33,11 @@ body{
    text-shadow: 2px 2px 2px #076be5;
 }
 .himg img{ 
-   height: 50px;
-   width:  50px;
-  
-
+	width:  80px;
+   height: 120px;
+   
 }
+
 
 
 .screenalign1{
@@ -42,9 +46,6 @@ body{
   background-color: black;
 }
 
-
-
- 
 
 
 .container {
@@ -76,23 +77,22 @@ body{
 	height: 768px;
 	width: 350px;
    margin-top: 20px;
-	
 	display: flex;
 	flex-direction: column;
 	border: 2px solid brown;
-   
 	padding: 10px;
-	
-
    box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.5),
    inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
-   
 }
 
 .table img {
-	height: 100px;
+	height: 120px;
 	width: 80px;  
+	position: absolute;
+	margin-left: 125px;
 }
+
+
 .அதிகாரபட்சி{
 	display: flex;
    align-items: center;
@@ -103,6 +103,7 @@ body{
    inset -21px -27px 20px -15px rgba(227, 221, 221, 0.5);
    
 }
+
 .படுபட்சி{
 	display: flex;
 	justify-content: center;

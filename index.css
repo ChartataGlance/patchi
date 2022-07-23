@@ -39,7 +39,7 @@ background-size: cover;
 }
 
 .himg img {
-	height: 78px;
+	height: 82px;
 	width: 60px;
 	
 }
@@ -94,6 +94,8 @@ background-size: cover;
 		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.3);
 }
 
+
+
 .talippu1 {
    min-width: 60px;
 	text-align: center;
@@ -135,21 +137,21 @@ background-size: cover;
 
 .table img {
 	height: 80px;
-	width: 80px;
+	width: 60px;
 	border-radius: 50%;
 }
 
 .talippud img{
-	height: 75px;
-	width:  75px;
+	height: 99px;
+	width:  66px;
 	border-radius: 50%;
    margin-bottom: 0px;
 }
 
 
 .talippun img{
-	height: 75px;
-	width:  75px;
+	height: 99px;
+	width:  66px;
 	border-radius: 50%;
    margin-top: 0px;
 }
@@ -157,6 +159,7 @@ background-size: cover;
 .talippud , .talippun {
    display: flex;
    font-size: large;
+	
 }
 
 
@@ -167,18 +170,19 @@ background-size: cover;
 	color: azure;
 }
 .படுபட்சி img {
-	height: 60px;
-	width: 60px;
+	height: 99px;
+	width:  66px;
 	border-radius: 50%;
 }
 .talippud {
 	text-align: center;
 	font-weight: 400;
    align-items: center;
+	
 	color: rgb(131, 167, 177);
 	box-shadow: inset 27px 27px 20px -15px rgba(236, 230, 230, 0.5),
-		inset -21px -27px 20px -15px rgba(232, 225, 225, 0.5);
-		border-radius: 10%;
+		inset -21px -27px 20px -15px rgba(232, 225, 225, 0.2);
+		border-radius: 50%;
 		
 	
 	
@@ -190,7 +194,7 @@ background-size: cover;
 	color: rgb(131, 167, 177);
 	box-shadow: inset 27px 27px 20px -15px rgba(16, 16, 16, 0.5),
 		inset -21px -27px 20px -15px rgba(4, 4, 4, 0.5);
-	border-radius: 10%;
+	border-radius: 25%;
 	
 }
 
