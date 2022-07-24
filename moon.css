@@ -1,5 +1,3 @@
-/** @format */
-
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
@@ -19,7 +17,7 @@ background-size: cover;
 
 }
 .datetime{
-   font-size: medium;
+   font-size: large;
    padding: 0px;
    color: aliceblue;
    text-align: center;
@@ -38,24 +36,42 @@ background-size: cover;
 	
 }
 
+
+
+
+
 .himg img {
 	height: 82px;
 	width: 60px;
 	
 }
 
-.navlink ul {
+.navlink {
 	background-color: rgba(0, 0, 0, 0.7);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 15px;
+	flex-direction: column;
+	
 }
-.navlink a{
-	padding: 10px;
+
+.navlink li{
+	color: aliceblue;
+	align-content: flex-start;
+	padding: 5px;
 	cursor: pointer;
-	color: burlywood;
+
+
 }
+
+.navlink a{
+ 
+	color: aliceblue;
+	
+
+}
+
+
 
 .dinapatchi {
 	min-height: 80vh;
@@ -63,34 +79,24 @@ background-size: cover;
    background-color: rgba(0, 0, 0, 0.7);
    display: flex;
    justify-content: center;
-  
+   flex-direction: column;
 }
 
-.dina{
-	color: bisque;
-	text-align: center;
-	
-	
-	
-}
+
 
 .pagaliravu-valarpirai , .pagaliravu-theipirai{
-	
 	display: flex;
 	justify-content: center;
 	align-items: center;
-   flex-direction: column;
-	box-shadow: 5px 5px 5px -5px rgba(215, 209, 209, 0.0),
-		-5px -5px 5px -5px rgba(220, 210, 210, 0.2),
-		inset 27px 27px 20px -15px rgba(237, 235, 235, 0.0),
-		inset -21px -27px 20px -15px rgba(233, 229, 229, 0);
-		border-radius: 20px;
-		gap: 5px;
-		
-	
+   flex-direction: row;
+	gap: 5px;
+	position: relative;
 }
 
-
+.kilamai {
+	color: rgb(241, 233, 233);
+	text-align: left;
+}
 
 .talippu1 {
    min-width: 60px;
@@ -98,10 +104,11 @@ background-size: cover;
 	font-weight: 400;
 	color: burlywood;
 	padding: 20px;
-	background-color: rgba(0, 0, 0, 0.7);
 	
 		
 }
+
+
 
 
 
@@ -113,10 +120,10 @@ background-size: cover;
 	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.5),
 		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
 	border-radius: 50%;
-	width:  184px;
+	width:  190px;
 	height: 190px;
-	
 }
+
 
 .pagaliravu-sunday,
 .pagaliravu-monday,
@@ -130,13 +137,15 @@ background-size: cover;
 	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.1),
 		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.1);
 		border-radius: 20px;
-		
+		gap: 5px;
 }
 
-.kilamai {
-	color: brown;
-	text-align: center;
-}
+
+
+
+
+
+
 
 .talippud img{
 	height: 95px;
@@ -153,11 +162,7 @@ background-size: cover;
    
 }
 
-.talippud , .talippun {
-   display: flex;
-   font-size: large;
-	
-}
+
 
 
 .படுபட்சி {
@@ -166,6 +171,7 @@ background-size: cover;
 	align-items: center;
 	color: azure;
 }
+
 .படுபட்சி img {
 	height: 99px;
 	width:  66px;
@@ -173,120 +179,34 @@ background-size: cover;
 }
 
 .talippud {
+	display: flex;
 	text-align: center;
 	font-weight: 400;
    align-items: center;
-	
 	color: rgb(131, 167, 177);
+	background-image: url(./sunpic.png);
+		background-position: left;
 	box-shadow: inset 27px 27px 20px -15px rgba(236, 230, 230, 0.9),
 		inset -21px -27px 20px -15px rgba(232, 225, 225, 0.2);
 		border-radius: 50%;
 		
-	
-	
+		
 }
+
 .talippun {
+	display: flex;
 	text-align: center;
 	font-weight: 400;
 	align-items: center;
 	color: rgb(131, 167, 177);
-	box-shadow: inset 27px 27px 20px -15px rgba(16, 16, 16, 0.5),
+	box-shadow: inset 27px 27px 20px -15px rgba(139, 134, 134, 0.8),
 		inset -21px -27px 20px -15px rgba(4, 4, 4, 0.5);
 	border-radius: 50%;
 	
 }
 
-button{
-	cursor: pointer;
-	--border-radius: 15px;
-	--border-width: 4px;
-	appearance: none;
-	position: relative;
-	padding: 0.2em 1em;
-	border: 0;
-	background-color: #212121;
-	z-index: 2;
-}
-button h2{
-	color: rgb(218, 223, 227);
-}
 
-button::after {
-	--m-i: linear-gradient(#000, #000);
-	--m-o: content-box, padding-box;
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	padding: var(--border-width);
-	border-radius: var(--border-radius);
-	background-image: conic-gradient(
-		  #488cfb,
-		  #29dbbc,
-		  #ddf505,
-		  #ff9f0e,
-		  #e440bb,
-		  #655adc,
-		  #488cfb
-	  );
-	-webkit-mask-image: var(--m-i), var(--m-i);
-	mask-image: var(--m-i), var(--m-i);
-	-webkit-mask-origin: var(--m-o);
-	mask-origin: var(--m-o);
-	-webkit-mask-clip: var(--m-o);
-	mask-composite: exclude;
-	-webkit-mask-composite: destination-out;
-	filter: hue-rotate(0);
-	animation: rotate-hue linear 500ms infinite;
-	animation-play-state: paused;
-  }
-  
-  button:hover::after {
-	animation-play-state: running;
-  }
-  
-  @keyframes rotate-hue {
-	to {
-	 filter: hue-rotate(1turn);
-	}
-  }
-  
-  button,
-  button::after {
-	box-sizing: border-box;
-  }
-  
-  button:active {
-	--border-width: 5px;
-  }
+	
 
-@media screen and (min-width: 999px) {
-	.dinapatchi {
-		min-height: 80vh;
-		min-width: 100vw;
-		display: flex;
-      flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-		gap: 20px;
-		padding: 20px;
-     
-	}
-   .pagaliravu-valarpirai , .pagaliravu-theipirai{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-		gap: 20px;
-   }
+	
 
-	.headline {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		min-height: 20vh;
-	}
-}
