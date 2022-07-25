@@ -84,7 +84,7 @@ background-size: cover;
 	align-items: center;
    flex-direction: column;
 	box-shadow: 5px 5px 5px -5px rgba(215, 209, 209, 0.0),
-		-5px -5px 5px -5px rgba(220, 210, 210, 0.2),
+		-5px -5px 5px -5px rgba(220, 210, 210, 0),
 		inset 27px 27px 20px -15px rgba(237, 235, 235, 0.0),
 		inset -21px -27px 20px -15px rgba(233, 229, 229, 0);
 		border-radius: 20px;
@@ -113,9 +113,9 @@ background-size: cover;
 	align-items: center;
 	justify-content: center;
    flex-direction: column;
-	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.5),
-		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
-	border-radius: 50%;
+	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.2),
+		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.2);
+	border-radius: 10px;
 	width:  184px;
 	height: 190px;
 	
@@ -129,10 +129,10 @@ background-size: cover;
 .pagaliravu-friday,
 .pagaliravu-saturday {
 	
-	border: 0px solid burlywood;
-	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.1),
-		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.1);
-		border-radius: 20px;
+	
+	box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0),
+		inset -21px -27px 20px -15px rgba(233, 229, 229, 0);
+		
 		
 }
 
@@ -292,7 +292,7 @@ button::after {
 	top: 0;
 	left: 0;
 	z-index: -1;
-	transition: all .4s;
+	transition: all .5s;
   }
   
   .btn::after {
