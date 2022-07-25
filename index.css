@@ -139,6 +139,7 @@ background-size: cover;
 .kilamai {
 	color: brown;
 	text-align: center;
+	padding: 5px;
 }
 
 .talippud img{
@@ -169,6 +170,7 @@ background-size: cover;
 	align-items: center;
 	color: azure;
 }
+
 .படுபட்சி img {
 	height: 99px;
 	width:  66px;
@@ -181,12 +183,10 @@ background-size: cover;
    align-items: center;
 	
 	color: rgb(131, 167, 177);
-	box-shadow: inset 27px 27px 20px -15px rgba(236, 230, 230, 0.9),
+	box-shadow: inset 27px 27px 20px -15px rgba(221, 200, 167, 0.9),
 		inset -21px -27px 20px -15px rgba(232, 225, 225, 0.2);
 		border-radius: 50%;
 		
-	
-	
 }
 .talippun {
 	text-align: center;
@@ -206,7 +206,7 @@ button{
 	appearance: none;
 	
 	position: relative;
-	padding: 0.2em 1em;
+	padding: 0.5em 1em;
 	border: 0;
 	background-color: #212121;
 	z-index: 2;
@@ -266,15 +266,19 @@ button::after {
 	--border-width: 5px;
   }
 
+
+
   .btn {
 	position: relative;
 	transition: all .2s;
 	border: none;
+	background-color: rgba(163, 95, 95 ,0.2);
+	border-radius: 50px;
   }
   
   .btn:hover {
 	transform: translateY(-3px);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   }
   
   .btn:active {
@@ -296,7 +300,7 @@ button::after {
   }
   
   .btn::after {
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.3);
   }
   
   .btn:hover::after {
