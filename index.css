@@ -240,7 +240,7 @@ button:hover::after {
 	}
 }
 
-button,
+* , button,
 button::after {
 	box-sizing: border-box;
 }
@@ -248,6 +248,7 @@ button::after {
 button:active {
 	--border-width: 5px;
 }
+
 
 
 
