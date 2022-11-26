@@ -35,7 +35,9 @@ body {
 	background-color: rgba(0, 0, 0, 0.8);
 	
 }
-
+.headline a{
+	color: rgb(157, 143, 123);
+}
 .himg img {
 	height: 82px;
 	width: 60px;

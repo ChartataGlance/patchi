@@ -17,13 +17,16 @@
 	font-weight: 600;
    color: burlywood;
    background-color: black;
-   text-shadow: 2px 2px 2px #076be5;
+   
 }
 .himg img{ 
    height: 50px;
    width: 50px;
    border-radius: 50%;
 
+}
+.headline a{
+	color: rgb(157, 143, 123);
 }
 
 
