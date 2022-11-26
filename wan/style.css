@@ -1,0 +1,189 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+	font-family: "Lato", sans-serif;
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.headline {
+	font-size: 25px;
+   min-height: 10%;
+   text-align: center;
+   padding: 20px;
+	font-weight: 600;
+   color: burlywood;
+   background-color: black;
+   
+}
+.himg img{ 
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+
+}
+.headline a{
+	color: burlywood;
+}
+
+
+
+
+
+
+ 
+
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+   background-color: rgb(0, 0, 0);
+   padding: 5px;
+
+}
+
+.gap {
+   height: 20px;
+   width: 100%;
+   background-color: black;
+   color: burlywood;
+   text-align: center;
+   bottom: 0;
+}
+.pstyle{
+   background-color: burlywood;
+   font-size: medium;
+   color: rgb(7, 1, 49);
+   font-weight: 600;
+   
+}
+
+.table {
+	height: 848px;
+	width: 340px;
+   
+	
+	display: flex;
+	
+	flex-direction: column;
+	border: 2px solid brown;
+   
+	padding: 10px;
+	background-image: url(./vultures.webp);
+
+   box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.5),
+   inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
+}
+
+.அதிகாரபட்சி{
+	display: flex;
+   align-items: center;
+   justify-content: center;
+	color: azure;
+	font-size: x-large;
+	min-height: 120px;
+   box-shadow: inset 27px 27px 20px -15px rgba(255, 253, 253, 0.5),
+   inset -21px -27px 20px -15px rgba(227, 221, 221, 0.5);
+   
+}
+.படுபட்சி{
+	display: flex;
+	justify-content: center;
+   align-items: center;
+	min-height: 120px;
+	color: azure;
+   font-size: xx-large;
+   background-color: rgba(4, 4, 4);
+}
+
+.talippu {
+	
+	font-size: 20px;
+	text-align: center;
+	font-weight: 600;
+	color: burlywood;
+	padding: 10px;
+	padding: 5px;
+   background-color: rgba(33, 39, 90, 0.701);
+   box-shadow:  27px 27px 20px -15px rgba(0,0,0,0.5), -21px -27px 20px -15px rgba(0,0,0,0.5);
+}
+
+.talippu h2{
+   text-shadow: 5px 5px 10px #f50c04;
+}
+
+.thozhil{
+   font-size: large;
+   color: rgb(246, 246, 246);
+   font-weight: 600;
+	margin-bottom: 5px;
+	margin-top: -20px;
+	margin-right: 20px;
+	text-align: end;
+}
+.paravai-vulture {
+	font-size: large;
+	font-weight: 600;
+	color: burlywood;
+	border: 1px solid burlywood;
+   margin-top: 10px;
+}
+.paravai-owl {
+	font-size: large;
+
+	font-weight: 600;
+	color: burlywood;
+	border: 1px solid burlywood;
+   margin-top: 10px;
+}
+.paravai-crow {
+	font-size: large;
+
+	font-weight: 600;
+	color: burlywood;
+	border: 1px solid burlywood;
+ 
+}
+.paravai-chicken {
+	font-size: large;
+	
+	font-weight: 600;
+	color: burlywood;
+	border: 1px solid burlywood;
+   
+}
+
+.paravai-peacock {
+	font-size: large;
+	
+	font-weight: 600;
+	color: burlywood;
+	border: 1px solid burlywood;
+   margin-top: 10px;
+}
+
+.buthi{
+   border: 2px solid burlywood;
+   margin-bottom: 10px;
+   padding: 10px;
+   box-shadow: inset 27px 27px 20px -15px rgba(66, 0, 0, 0.5),
+   inset -21px -27px 20px -15px rgba(31, 1, 1, 0.5);
+}
+
+.screenalign1{
+	display: flex;
+	justify-content: center;
+	background-color: black;
+ }
+
+@media screen and (min-width: 1920px){
+   .screenalign{
+      display: flex;
+      justify-content: center;
+      background-color: black;
+  }
+}
