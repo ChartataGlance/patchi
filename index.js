@@ -1,3 +1,4 @@
+/** @format */
 
 const timeElement = document.querySelector(".time");
 const dateElement = document.querySelector(".date");
@@ -6,17 +7,18 @@ const dateElement = document.querySelector(".date");
  * @param {Date} date
  */
 function formateTime(date) {
-	var sunRise = document.getElementById("myTime").value;
-	const hours = date.getUTCHours() ;
-	const minutes = date.getUTCMinutes();
-	const seconds = date.getUTCSeconds();
-	
+	const hours12 = date.getHours() % 12 || 12;
+	const minutes = date.getMinutes();
+	const seconds = date.getSeconds();
    
 
-	return `UTC ${hours}:
-	            ${minutes.toString().padStart(2, "0")}
-		         ${seconds.toString().padStart(2, "0")}
-	`;
+	const isAm = date.getHours() < 12;
+
+	return `${hours12.toString().padStart(2, "0")}:${minutes
+		.toString()
+		.padStart(2, "0")} ${seconds.toString().padStart(2, "0")} ${
+		isAm ? "AM" : "PM"
+	}`;
 }
 
 /**
@@ -61,9 +63,4 @@ setInterval(() => {
 }, 100);
 
 
-function myFunction() {
-	var x = document.getElementById("myTime").value;
-	document.getElementById("demo").innerHTML = x;
-}
 
-myFunction()
