@@ -17,16 +17,10 @@
    background-color: rgb(9, 58, 99);
    
 }
-.himg img{ 
-   height: 50px;
-   width: 50px;
-   border-radius: 50%;
 
-}
 .headline a{
 	color: burlywood;
 }
-
 
 .container {
 	display: flex;
@@ -55,20 +49,16 @@
 }
 
 .table {
-	min-height: 600px;
-	width: 340px;
-   
-	
+	min-height: 666px;
+	width: 333px;
 	display: flex;
-	
 	flex-direction: column;
 	border: 2px solid brown;
-   
 	padding: 10px;
-	background-image: url(./vultures.webp);
+	background-image: url(../vultures.webp);
 
-   box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.5),
-   inset -21px -27px 20px -15px rgba(233, 229, 229, 0.5);
+   box-shadow: inset 27px 27px 20px -10px rgba(50, 28, 28, 0.927),
+               inset -21px -27px 20px -10px rgba(127, 105, 105, 0.5);
 }
 
 .அதிகாரபட்சி{
@@ -109,53 +99,54 @@
 }
 
 .thozhil{
-   font-size: large;
    color: rgb(246, 246, 246);
    font-weight: 600;
 	margin-bottom: 5px;
-	margin-top: -20px;
 	margin-right: 20px;
 	text-align: end;
 }
+
 .paravai-vulture {
 	font-size: large;
 	font-weight: 600;
 	color: burlywood;
 	border: 1px solid burlywood;
    margin-top: 10px;
+	min-height: 120px;
 }
 .paravai-owl {
-	font-size: large;
-
 	font-weight: 600;
 	color: burlywood;
 	border: 1px solid burlywood;
    margin-top: 10px;
+	min-height: 120px;
 }
 .paravai-crow {
-	font-size: large;
+
 
 	font-weight: 600;
 	color: burlywood;
 	border: 1px solid burlywood;
+	margin-top: 10px;
+	min-height: 120px;
  
 }
 .paravai-chicken {
-	font-size: large;
 	
 	font-weight: 600;
 	color: burlywood;
 	border: 1px solid burlywood;
+	margin-top: 10px;
+	min-height: 120px;
    
 }
 
 .paravai-peacock {
-	font-size: large;
-	
 	font-weight: 600;
 	color: burlywood;
 	border: 1px solid burlywood;
    margin-top: 10px;
+	min-height: 120px;
 }
 
 .buthi{
