@@ -33,9 +33,8 @@ body {
 	font-weight: 600;
 	color: burlywood;
 	background-color: rgba(0, 0, 0, 0.8);
-	
 }
-.headline a{
+.headline a {
 	color: rgb(157, 143, 123);
 }
 .himg img {
@@ -102,7 +101,6 @@ body {
 	border-radius: 10px;
 	width: 184px;
 	height: 190px;
-	
 }
 
 .pagaliravu-sunday,
@@ -111,18 +109,13 @@ body {
 .pagaliravu-wednesday,
 .pagaliravu-thursday,
 .pagaliravu-friday,
-.pagaliravu-saturday 
-{
-
+.pagaliravu-saturday {
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-  
-	
-	
 }
 
 .kilamai {
@@ -157,7 +150,6 @@ body {
 	align-items: center;
 	color: azure;
 	height: 33%;
-	
 }
 
 .படுபட்சி img {
@@ -167,15 +159,13 @@ body {
 }
 
 .talippud {
-	
 	text-align: center;
 	font-weight: 400;
 	align-items: center;
 	color: rgb(131, 167, 177);
 	box-shadow: inset 27px 27px 20px -15px rgba(221, 200, 167, 0.5),
-		         inset -21px -27px 20px -15px rgba(232, 225, 225, 0.2);
+		inset -21px -27px 20px -15px rgba(232, 225, 225, 0.2);
 	border-radius: 50%;
-	
 }
 .talippun {
 	text-align: center;
@@ -185,33 +175,69 @@ body {
 	box-shadow: inset 27px 27px 20px -15px rgba(16, 16, 16, 0.5),
 		inset -21px -27px 20px -15px rgba(4, 4, 4, 0.5);
 	border-radius: 50%;
-
 }
 
-
-.talippud:hover{
-	opacity: 0.8;
+.talippud:hover {
+	opacity: 0.9;
 	transform: translateX(2px);
 	cursor: pointer;
 	color: rgb(230, 238, 239);
 	border-radius: 45%;
 	box-shadow: inset -27px -27px 20px -15px rgba(212, 198, 198, 0.5),
-		         inset 21px 27px 20px -15px rgba(20, 19, 19, 0.5);
+		inset 21px 27px 20px -15px rgba(20, 19, 19, 0.5);
 }
-.talippun:hover{
-	opacity: 0.8;
+.talippun:hover {
+	opacity: 0.9;
 	transform: translateX(2px);
 	cursor: pointer;
 	border-radius: 45%;
 	box-shadow: inset -27px -27px 20px -15px rgba(117, 111, 111, 0.5),
-	            inset 21px 27px 20px -15px rgba(4, 4, 4, 0.5);
-
+		inset 21px 27px 20px -15px rgba(4, 4, 4, 0.5);
 }
 
+.talippud:hover h4 {
+   opacity: 0;
+}
+.talippun:hover h4 {
+   opacity: 0;
+}
+.talippud:hover h5 {
+   opacity: 0;
+}
+.talippun:hover h5 {
+   opacity: 0;
+}
 
+.talippud::after {
+	content: "View More";
+	font-weight: 400;
+	color: aliceblue;
+	position: absolute;
+	left: 40%;
+	top: 31%;
+	bottom: 0;
+	opacity: 0;
+}
 
+.talippud:hover::after {
+	opacity: 1;
+	transition: all 0.2s ease-in-out;
+}
+.talippun::after {
+	content: "View More";
+	font-weight: 400;
+	color: aliceblue;
+	position: absolute;
+	left: 35%;
+	top: 31%;
+	bottom: 0;
+	opacity: 0;
+}
 
-
+.talippun:hover::after {
+	opacity: 1;
+	transition: all 0.2s ease-in-out;
+}
 @media screen and (min-width: 999px) {
 	.dinapatchi {
 		min-height: 80vh;
