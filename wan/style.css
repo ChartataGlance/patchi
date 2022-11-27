@@ -161,7 +161,7 @@
 .screenalign1{
 	display: flex;
 	justify-content: center;
-	background-color: black;
+	
  }
 
 @media screen and (min-width: 1920px){
