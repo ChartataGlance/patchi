@@ -12,8 +12,9 @@
 }
 
 body {
-	background-color: rgb(30, 14, 71);
-	background-image: url(./moonpic4.jpg);
+	background-color: rgb(11, 5, 36);
+	/* background-image: url(./moonpic4.jpg); */
+	background-image: url(./mayilbackdrop.jfif);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -21,7 +22,7 @@ body {
 .datetime {
 	font-size: medium;
 	padding: 0px;
-	color: aliceblue;
+	color: rgb(61, 68, 74);
 	text-align: center;
 }
 
@@ -31,34 +32,22 @@ body {
 	text-align: center;
 	padding: 10px;
 	font-weight: 600;
-	color: burlywood;
-	background-color: rgba(0, 0, 0, 0.8);
+	color: rgb(195, 175, 150);
+	background-color: rgba(49, 114, 194, 0.5);
 }
 .headline a {
-	color: rgb(157, 143, 123);
+	color: rgb(23, 64, 135);
 }
 .himg img {
 	height: 82px;
 	width: 60px;
 }
 
-.navlink ul {
-	background-color: rgba(0, 0, 0, 0.8);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 15px;
-}
-.navlink a {
-	padding: 10px;
-	cursor: pointer;
-	color: burlywood;
-}
 
 .dinapatchi {
 	min-height: 80vh;
 	min-width: 100vw;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(26, 47, 130, 0.9);
 	display: flex;
 	justify-content: center;
 }
@@ -88,7 +77,7 @@ body {
 	font-weight: 400;
 	color: burlywood;
 	padding: 20px;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .dbl {
