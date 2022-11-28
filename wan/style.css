@@ -21,7 +21,7 @@ body {
    min-height: 10%;
    text-align: center;
    padding: 20px;
-   background-color: rgb(9, 58, 99);
+   background-color: rgba(9, 58, 99,0.9);
    
 }
 
