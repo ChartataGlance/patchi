@@ -54,23 +54,24 @@
    }
 
    body {
-      margin: 0;
-      min-width: 320px;
-      min-height: 100vh;
+      margin: 0 auto;
+      min-width: 333px;
+      min-height: 90vh;
       background: rgb(8, 81, 141);
       position: relative;
+      display: grid;
+      justify-content: center;
+
 
    }
 
 
 
-   .headline {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 320px;
-      transform: translate(-50%, -50%);
-      padding: 5%;
+   .container {
+      text-align: center;
+      min-width: 333px;
+      max-width: 677px;
+      padding: 2%;
       text-align: center;
       background: rgba(12, 3, 43, 0.2);
       border-radius: 20px;
@@ -121,8 +122,8 @@
       </div>
    </nav>
 
-   <header>
-      <div class="headline">
+   <header >
+      <div class="container">
          <a href="/">
             <h1 style="font-size: 2rem  ; color: burlywood;">பட்சி 5</h1>
          </a>
@@ -135,7 +136,7 @@
          </div>
          <div>
 
-            <table width="100%" border="1px">
+            <table  width="100%" border="1px">
                <h1 style="font-size: 2.2rem  ; color: coral; padding: 20px;">அட்சரம் 5</h1>
                <tr>
                   <th style=" padding: 12px;">அ</th>
@@ -165,7 +166,7 @@
                   <th style=" padding: 12px; font-size: small;">144min</th>
                </tr>
             </table>
-            <table width="100%" border="1px">
+           <table width="100%" border="1px">
                <h1 style="font-size: 2.2rem  ; color: coral; padding: 20px;">நாழிகை 6</h1>
                <tr>
                   <th style=" padding: 12px; font-size: small;">24min</th>
@@ -185,14 +186,20 @@
    </header>
 
 
-   <footer style=" bottom:0; left: 50%;  transform: translate(-50%, -50%);">
-      <a href="https://www.PanchaPatchi.com">
+
+   <footer>
+      <a href="https://www.PanchaPatchi.com/">
          <center>
-            <p style="color: aliceblue; padding: 20px;  ">&copy; PanchaPatchi.com <br> All Rights Reserved</p>
+            <p style="color: aliceblue; padding: 20px;  ">&copy; PanchaPatchi.com | All Rights Reserved</p>
+         </center>
+      </a>
+      <center><a style="color: rgb(55, 121, 68); padding: 20px;" href="https://www.PanchaPatchi.com/contact.html">Contact</a></center>
+      <a href="https://www.ChartataGlance.co.uk">
+         <center>
+            <p style="color: rgb(3, 21, 37);">By ChartataGlance</p>
          </center>
       </a>
    </footer>
-
 </body>
 
 </html>
