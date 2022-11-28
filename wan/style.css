@@ -8,6 +8,13 @@
 	box-sizing: border-box;
 	margin: 0;
 }
+body {
+	background-color: rgb(11, 5, 36);
+	
+	background-image: url(../mayilbackdrop.jfif);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 .headline {
 	font-size: 25px;
@@ -26,7 +33,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-   background-color: rgb(4, 40, 64);
+   background-color: rgba(4, 40, 64,0.9);
    padding: 5px;
 
 }
@@ -168,6 +175,6 @@
    .screenalign{
       display: flex;
       justify-content: center;
-      background-color: black;
+     
   }
 }
