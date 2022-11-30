@@ -2,21 +2,28 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@500&display=swap");
 
-* {
+*,
+*::after,
+*::before {
 	padding: 0;
-	box-sizing: border-box;
 	margin: 0;
-	list-style: none;
+	box-sizing: border-box;
+	
+   list-style: none;
 	text-decoration: none;
-	font-family: "Noto Sans Tamil", sans-serif;
 }
 
 body {
+	padding: 0;
+	margin: 0;
+	font-family: "Noto Sans Tamil", sans-serif;
+	/* font-family: Gothem Rounded, sans-serif; */
 	background-color: rgb(11, 5, 36);
 	/* background-image: url(./moonpic4.jpg); */
 	background-image: url(./mayilbackdrop.jfif);
 	background-repeat: no-repeat;
 	background-size: cover;
+
 }
 
 .datetime {
@@ -27,18 +34,15 @@ body {
 }
 
 .headline {
-	
 	min-height: 10%;
 	text-align: center;
 	padding: 10px;
-	background-color: rgba(218, 223, 230, 0.057);
+	background-color: rgba(218, 223, 230, 0.05);
 }
 .headline a {
 	color: rgba(12, 21, 121, 0.737);
 	font-size: 25px;
 }
-
-
 
 .dinapatchi {
 	min-height: 70vh;
@@ -59,6 +63,9 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	padding-right: 0.2vh;
 	box-shadow: 5px 5px 5px -5px rgba(215, 209, 209, 0),
 		-5px -5px 5px -5px rgba(220, 210, 210, 0),
 		inset 27px 27px 20px -15px rgba(237, 235, 235, 0),
@@ -85,7 +92,7 @@ body {
 		inset -21px -27px 20px -15px rgba(233, 229, 229, 0.2);
 	border-radius: 10px;
 	width: 184px;
-	height: 190px;
+	height: 250px;
 }
 
 .pagaliravu-sunday,
@@ -103,32 +110,19 @@ body {
 	align-items: center;
 }
 
-.kilamai {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 5px;
-	min-height: 66px;
-}
-
 .talippud img {
 	height: 95px;
 	width: 66px;
-	border-radius: 50%;
 }
 
 .talippun img {
 	height: 95px;
 	width: 66px;
-	border-radius: 50%;
 }
 
 .talippud,
 .talippun {
 	display: flex;
-	font-size: large;
-	
-	
 }
 
 .படுபட்சி {
@@ -136,34 +130,29 @@ body {
 	justify-content: center;
 	align-items: center;
 	color: azure;
-	height: 33%;
 }
 
 .படுபட்சி img {
 	height: 99px;
 	width: 66px;
-	border-radius: 50%;
 }
 
 .talippud {
 	text-align: center;
-	
 	align-items: center;
-	color: rgb(131, 167, 177);
+	color: rgb(179, 200, 206);
 	box-shadow: inset 27px 27px 20px -15px rgba(221, 200, 167, 0.5),
 		inset -21px -27px 20px -15px rgba(232, 225, 225, 0.2);
-	border-radius: 50%;
+	border-radius: 5px;
 	z-index: 5;
-	
 }
 .talippun {
 	text-align: center;
-	
 	align-items: center;
-	color: rgb(131, 167, 177);
+	color: rgb(106, 152, 92);
 	box-shadow: inset 27px 27px 20px -15px rgba(16, 16, 16, 0.5),
-	         	inset -21px -27px 20px -15px rgba(4, 4, 4, 0.5);
-	border-radius: 50%;
+		inset -21px -27px 20px -15px rgba(4, 4, 4, 0.5);
+	border-radius: 5px;
 	z-index: 5;
 }
 
@@ -174,8 +163,8 @@ body {
 	color: rgb(230, 238, 239);
 	border-radius: 45%;
 	box-shadow: inset -27px -27px 20px -15px rgba(212, 198, 198, 0.5),
-		         inset 21px 27px 20px -15px rgba(20, 19, 19, 0.5);
-					transition: all 0.3s ease;
+		inset 21px 27px 20px -15px rgba(20, 19, 19, 0.5);
+	transition: all 0.3s ease;
 }
 .talippun:hover {
 	opacity: 0.9;
@@ -183,21 +172,16 @@ body {
 	cursor: pointer;
 	border-radius: 45%;
 	box-shadow: inset -27px -27px 20px -15px rgba(117, 111, 111, 0.5),
-		         inset 21px 27px 20px -15px rgba(4, 4, 4, 0.5);
-					transition: all 0.3s ease;
+		inset 21px 27px 20px -15px rgba(4, 4, 4, 0.5);
+	transition: all 0.3s ease;
 }
 
-.talippud:hover h4 {
-   opacity: 0;
-}
-.talippun:hover h4 {
-   opacity: 0;
-}
+
 .talippud:hover h5 {
-   opacity: 0;
+	opacity: 0;
 }
 .talippun:hover h5 {
-   opacity: 0;
+	opacity: 0;
 }
 
 .talippud::after {
@@ -214,7 +198,6 @@ body {
 .talippud:hover::after {
 	opacity: 1;
 	transition: all 0.3s ease;
-	
 }
 .talippun::after {
 	content: "View More";
@@ -231,16 +214,20 @@ body {
 	opacity: 1;
 	transition: all 0.3s ease;
 }
-@media screen and (min-width: 999px) {
+@media screen and (min-width: 1368px) {
 	.dinapatchi {
-		min-height: 80vh;
-		min-width: 100vw;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
-		gap: 40px;
-		padding: 20px;
+	}
+	.linkpatchi{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		
+
 	}
 	.pagaliravu-valarpirai,
 	.pagaliravu-theipirai {
@@ -248,7 +235,7 @@ body {
 		justify-content: center;
 		align-items: center;
 		flex-direction: row;
-		gap: 40px;
+		gap: 1vw;
 	}
 
 	.headline {
@@ -258,4 +245,8 @@ body {
 		justify-content: center;
 		min-height: 20vh;
 	}
+}
+.footer-link a {
+	color: rgb(8, 107, 135);
+	text-transform: capitalize;
 }
