@@ -22,7 +22,7 @@
  navigator.geolocation.getCurrentPosition(showPosition);
  function showPosition(position) {
 	 var date = new Date().sunrise(position.coords.latitude, position.coords.longitude)
-	 x.innerHTML = "Local Sunrise " + date ;  
+	 x.innerHTML = "<small>Local Sunrise:</small> <br>" + date ;  
 	 // "Latitude: " + position.coords.latitude + position.coords.longitude + 
 	//  string = toString.date
 	//  console.log(string);
