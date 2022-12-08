@@ -57,7 +57,7 @@ function convertToStamp(srmin, addmin) {
 	var seconds = split[2];
 	total = addmin + (splith + splitm) / 60;
 
-	var calchours = Math.floor(total / 60);
+	var calchours = Math.floor(total / 60) % 24 || 24 ;
 	var calcminutes = total % 60;
 	var hours = calchours.toString().padStart(2, "0");
 	var minutes = calcminutes.toString().padStart(2, "0");

@@ -11,7 +11,7 @@
 
 body {
 	margin: 0 auto;
-   min-width: 333px;
+	min-width: 333px;
 	background-color: rgb(12, 5, 41);
 	background-image: url(../img/mayilbackdrop.jfif);
 	background-repeat: no-repeat;
@@ -54,7 +54,8 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 5%;
-	background: rgba(255, 255, 255, 0.13);
+	background: rgba(255, 255, 255, 0.02);
+	box-shadow: inset 0 0 5px rgba(0 0 0 /0.2);
 	transition: top 2s;
 	transition-timing-function: cubic-bezier(0.2, 0.7, 1, 0.3);
 }
@@ -74,31 +75,31 @@ body {
 	bottom: 1%;
 }
 
-.தொழில்1{
+.தொழில்1 {
 	border: 5px solid goldenrod;
-	box-shadow: 0 0 5px rgba(0 0 0 /0.77);
-	
+	box-shadow: inset 0 0 5px rgba(0 0 0 /0.77);
 }
-.தொழில்2{
+.தொழில்2 {
 	border: 4px solid goldenrod;
-	box-shadow: 0 0 5px rgba(0 0 0 /0.77);
+	box-shadow: inset 0 0 5px rgba(0 0 0 /0.77);
 }
-.தொழில்3{
+.தொழில்3 {
 	border: 3px solid goldenrod;
-	box-shadow: 0 0 5px rgba(0 0 0 /0.77);
+	box-shadow: inset 0 0 5px rgba(0 0 0 /0.77);
 }
-.தொழில்4{
+.தொழில்4 {
 	border: 2px solid goldenrod;
-	box-shadow: 0 0 5px rgba(0 0 0 /0.77);
+	box-shadow: inset 0 0 5px rgba(0 0 0 /0.77);
 }
-.தொழில்5{
+.தொழில்5 {
 	border: 1px solid gold;
-	box-shadow: 0 0 5px rgba(0 0 0 /0.77);
+	box-shadow: inset 0 0 5px rgba(0 0 0 /0.77);
 }
-.time{
+.time {
 	font-size: 1.2em;
 	font-weight: 500;
 }
+
 @media screen and (min-width: 1368px) {
 	body {
 		margin: 0 auto;
@@ -106,9 +107,10 @@ body {
 	}
 	.சாமம் {
 		display: flex;
+		padding-bottom: 2vh;
 	}
 	.சாமம்-தொழில் {
-		width: 252px;
-		height: 252px;
+		width: 202px;
+		height: 202px;
 	}
 }
