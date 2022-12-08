@@ -7,7 +7,7 @@ const dateElement = document.querySelector(".date");
  * @param {Date} date
  */
 function formateTime(date) {
-	const hours12 = date.getHours() % 12 || 12;
+	const hours12 = date.getHours();
 	const minutes = date.getMinutes();
 	const seconds = date.getSeconds();
    
@@ -16,9 +16,8 @@ function formateTime(date) {
 
 	return `${hours12.toString().padStart(2, "0")}:${minutes
 		.toString()
-		.padStart(2, "0")} ${seconds.toString().padStart(2, "0")} ${
-		isAm ? "AM" : "PM"
-	}`;
+		.padStart(2, "0")} ${seconds.toString().padStart(2, "0")} 
+	`;
 }
 
 /**

@@ -23,11 +23,10 @@
  function showPosition(position) {
 	 var date = new Date().sunrise(position.coords.latitude, position.coords.longitude)
 	 x.innerHTML = "<small>Local Sunrise:</small> <br>" + date ;  
-	 // "Latitude: " + position.coords.latitude + position.coords.longitude + 
-	//  string = toString.date
-	//  console.log(string);
-
+	 
  }
+
+
 
 
  Date.prototype.sunrise = function(latitude, longitude, zenith) {
