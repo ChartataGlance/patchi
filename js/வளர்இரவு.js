@@ -10,14 +10,13 @@ function showPosition(pos) {
 	var date = new Date().sunrise(pos.coords.latitude, pos.coords.longitude);
 	let srt = SunRiseTime(date);
 	document.getElementById("சூரியஉதயம்").innerText = "Local Sunrise Time " + `${srt}`;
-
+	
 	document.getElementById("முதல்சாமம்வளர்இரவுஊண்").innerText = "Untill " + `${convertToStamp(srt, 750)}`;//30
 	document.getElementById("முதல்சாமம்வளர்இரவுஅரசு").innerText =  "Untill " + `${convertToStamp(srt, 798)}`;//48
 	document.getElementById("முதல்சாமம்வளர்இரவுசாவு").innerText =   "Untill " + `${convertToStamp(srt, 810)}`;//12
 	document.getElementById("முதல்சாமம்வளர்இரவுநடை").innerText =  "Untill " + `${convertToStamp(srt, 846)}`;//36
 	document.getElementById("முதல்சாமம்வளர்இரவுதுயில்").innerText = "Untill " + `${convertToStamp(srt, 864)}`;//18
 	
-
 	
 	document.getElementById("இரண்டாவதுசாமம்வளர்இரவுஅரசு").innerText = "Untill " + `${convertToStamp(srt, 912)}`;//48
    document.getElementById("இரண்டாவதுசாமம்வளர்இரவுசாவு").innerText = "Untill " + `${convertToStamp(srt,  924)}`;//12
@@ -39,15 +38,13 @@ function showPosition(pos) {
 	document.getElementById("நான்காவதுசாமம்வளர்இரவுஅரசு").innerText = "Untill " + `${convertToStamp(srt, 1284)}`;//48
 	document.getElementById("நான்காவதுசாமம்வளர்இரவுசாவு").innerText = "Untill " + `${convertToStamp(srt, 1296)}`;//12
 	
-   
-	
 
 	document.getElementById("ஐந்தாவதுசாமம்வளர்இரவுதுயில்").innerText = "Untill " + `${convertToStamp(srt, 1314)}`;//18
 	document.getElementById("ஐந்தாவதுசாமம்வளர்இரவுஊண்").innerText = "Untill " + `${convertToStamp(srt, 1344)}`;//30
 	document.getElementById("ஐந்தாவதுசாமம்வளர்இரவுஅரசு").innerText = "Untill " + `${convertToStamp(srt, 1392)}`;//48
 	document.getElementById("ஐந்தாவதுசாமம்வளர்இரவுசாவு").innerText = "Untill " + `${convertToStamp(srt, 1404)}`;//12
    document.getElementById("ஐந்தாவதுசாமம்வளர்இரவுநடை").innerText = "Untill " + `${convertToStamp(srt, 1440)}`;//36
-	
+
 	
 }
 
@@ -63,7 +60,7 @@ function convertToStamp(srmin, addmin) {
 	var seconds = split[2];
 	total = addmin + (splith + splitm) / 60;
 
-	var calchours = Math.floor(total / 60) % 24 || 24;
+	var calchours = Math.floor(total / 60) % 24 || 24 ;
 	var calcminutes = total % 60;
 	var hours = calchours.toString().padStart(2, "0");
 	var minutes = calcminutes.toString().padStart(2, "0");

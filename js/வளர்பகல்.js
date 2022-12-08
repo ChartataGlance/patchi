@@ -10,6 +10,7 @@ function showPosition(pos) {
 	var date = new Date().sunrise(pos.coords.latitude, pos.coords.longitude);
 	let srt = SunRiseTime(date);
 	document.getElementById("சூரியஉதயம்").innerText = "Local Sunrise Time " + `${srt}`;
+
 	document.getElementById("முதல்சாமம்வளர்பகல்ஊண்").innerText = "Untill " + `${convertToStamp(srt, 30)}`;
 	document.getElementById("முதல்சாமம்வளர்பகல்நடை").innerText =  "Untill " + `${convertToStamp(srt, 66)}`;
 	document.getElementById("முதல்சாமம்வளர்பகல்அரசு").innerText =  "Untill " + `${convertToStamp(srt, 114)}`;
@@ -43,6 +44,10 @@ function showPosition(pos) {
    document.getElementById("ஐந்தாவதுசாமம்வளர்பகல்நடை").innerText = "Untill " + `${convertToStamp(srt, 654)}`;
 	document.getElementById("ஐந்தாவதுசாமம்வளர்பகல்அரசு").innerText = "Untill " + `${convertToStamp(srt, 702)}`;
 	document.getElementById("ஐந்தாவதுசாமம்வளர்பகல்துயில்").innerText = "Untill " + `${convertToStamp(srt, 720)}`;
+	
+
+	
+	
 }
 
 function SunRiseTime(date) {
@@ -57,7 +62,7 @@ function convertToStamp(srmin, addmin) {
 	var seconds = split[2];
 	total = addmin + (splith + splitm) / 60;
 
-	var calchours = Math.floor(total / 60) % 24 || 24 ;
+	var calchours = Math.floor(total / 60) % 24 || 24;
 	var calcminutes = total % 60;
 	var hours = calchours.toString().padStart(2, "0");
 	var minutes = calcminutes.toString().padStart(2, "0");
