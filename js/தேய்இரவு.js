@@ -24,10 +24,10 @@ function showPosition(pos) {
 	
 	
 
-  document.getElementById("மூன்றாவதுசாமம்தேய்இரவுநடை").innerText = "Untill " + `${convertToStamp(srt, 1046)}`;//42
-  document.getElementById("மூன்றாவதுசாமம்தேய்இரவுசாவு").innerText = "Untill " + `${convertToStamp(srt, 1070)}`;//24
-  document.getElementById("மூன்றாவதுசாமம்தேய்இரவுஅரசு").innerText = "Untill " + `${convertToStamp(srt, 1088)}`;//18
-  document.getElementById("மூன்றாவதுசாமம்தேய்இரவுஊண்").innerText = "Untill " + `${convertToStamp(srt, 1130)}`;//42
+  document.getElementById("மூன்றாவதுசாமம்தேய்இரவுநடை").innerText = "Untill " + `${convertToStamp(srt, 1050)}`;//42
+  document.getElementById("மூன்றாவதுசாமம்தேய்இரவுசாவு").innerText = "Untill " + `${convertToStamp(srt, 1074)}`;//24
+  document.getElementById("மூன்றாவதுசாமம்தேய்இரவுஅரசு").innerText = "Untill " + `${convertToStamp(srt, 1092)}`;//18
+  document.getElementById("மூன்றாவதுசாமம்தேய்இரவுஊண்").innerText = "Untill " + `${convertToStamp(srt, 1134)}`;//42
   document.getElementById("மூன்றாவதுசாமம்தேய்இரவுதுயில்").innerText = "Untill " + `${convertToStamp(srt, 1152)}`;//18	
 	
 	

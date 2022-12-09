@@ -11,39 +11,37 @@ function showPosition(pos) {
 	let srt = SunRiseTime(date);
 	document.getElementById("சூரியஉதயம்").innerText = "Local Sunrise Time " + `${srt}`;
 
-	document.getElementById("முதல்சாமம்தேய்பகல்ஊண்").innerText = "Untill " + `${convertToStamp(srt, 30)}`;
-	document.getElementById("முதல்சாமம்தேய்பகல்நடை").innerText =  "Untill " + `${convertToStamp(srt, 66)}`;
-	document.getElementById("முதல்சாமம்தேய்பகல்அரசு").innerText =  "Untill " + `${convertToStamp(srt, 114)}`;
-	document.getElementById("முதல்சாமம்தேய்பகல்துயில்").innerText = "Untill " + `${convertToStamp(srt, 132)}`;
-	document.getElementById("முதல்சாமம்தேய்பகல்சாவு").innerText =   "Untill " + `${convertToStamp(srt, 144)}`;
-
-	document.getElementById("இரண்டாவதுசாமம்தேய்பகல்நடை").innerText = "Untill " + `${convertToStamp(srt, 180)}`;
-	document.getElementById("இரண்டாவதுசாமம்தேய்பகல்அரசு").innerText = "Untill " + `${convertToStamp(srt, 228)}`;
-	document.getElementById("இரண்டாவதுசாமம்தேய்பகல்துயில்").innerText = "Untill " + `${convertToStamp(srt, 246)}`;
-	document.getElementById("இரண்டாவதுசாமம்தேய்பகல்சாவு").innerText = "Untill " + `${convertToStamp(srt, 258)}`;
-	document.getElementById("இரண்டாவதுசாமம்தேய்பகல்ஊண்").innerText = "Untill " + `${convertToStamp(srt, 288)}`;
+	document.getElementById("முதல்சாமம்தேய்பகல்ஊண்").innerText = "Untill " + `${convertToStamp(srt, 48)}`;//48
+	document.getElementById("முதல்சாமம்தேய்பகல்சாவு").innerText =  "Untill " + `${convertToStamp(srt, 78)}`;//30
+	document.getElementById("முதல்சாமம்தேய்பகல்துயில்").innerText = "Untill " + `${convertToStamp(srt, 90)}`;//12
+	document.getElementById("முதல்சாமம்தேய்பகல்அரசு").innerText =  "Untill " + `${convertToStamp(srt, 108)}`;//18
+	document.getElementById("முதல்சாமம்தேய்பகல்நடை").innerText =  "Untill " + `${convertToStamp(srt, 144)}`;//36
+	
+	
+   document.getElementById("இரண்டாவதுசாமம்தேய்பகல்சாவு").innerText =  "Untill " + `${convertToStamp(srt, 174)}`;//30
+   document.getElementById("இரண்டாவதுசாமம்தேய்பகல்துயில்").innerText = "Untill " + `${convertToStamp(srt, 186)}`;//12
+   document.getElementById("இரண்டாவதுசாமம்தேய்பகல்அரசு").innerText =  "Untill " + `${convertToStamp(srt, 204)}`;//18
+   document.getElementById("இரண்டாவதுசாமம்தேய்பகல்நடை").innerText =  "Untill " + `${convertToStamp(srt, 240)}`;//36
+	document.getElementById("இரண்டாவதுசாமம்தேய்பகல்ஊண்").innerText = "Untill " + `${convertToStamp(srt, 288)}`;//48
 
 	
-	document.getElementById("மூன்றாவதுசாமம்தேய்பகல்அரசு").innerText = "Untill " + `${convertToStamp(srt, 336)}`;
-	document.getElementById("மூன்றாவதுசாமம்தேய்பகல்துயில்").innerText = "Untill " + `${convertToStamp(srt, 354)}`;
-	document.getElementById("மூன்றாவதுசாமம்தேய்பகல்சாவு").innerText = "Untill " + `${convertToStamp(srt, 366)}`;
-	document.getElementById("மூன்றாவதுசாமம்தேய்பகல்ஊண்").innerText = "Untill " + `${convertToStamp(srt, 396)}`;
-   document.getElementById("மூன்றாவதுசாமம்தேய்பகல்நடை").innerText = "Untill " + `${convertToStamp(srt, 432)}`;
+	document.getElementById("மூன்றாவதுசாமம்தேய்பகல்துயில்").innerText = "Untill " + `${convertToStamp(srt, 300)}`;//12
+	document.getElementById("மூன்றாவதுசாமம்தேய்பகல்அரசு").innerText = "Untill " + `${convertToStamp(srt, 318)}`;//18
+   document.getElementById("மூன்றாவதுசாமம்தேய்பகல்நடை").innerText = "Untill " + `${convertToStamp(srt, 354)}`;//36
+	document.getElementById("மூன்றாவதுசாமம்தேய்பகல்ஊண்").innerText = "Untill " + `${convertToStamp(srt, 402)}`;//48
+	document.getElementById("மூன்றாவதுசாமம்தேய்பகல்சாவு").innerText = "Untill " + `${convertToStamp(srt,  432)}`;//30
 
+	document.getElementById("நான்காவதுசாமம்தேய்பகல்அரசு").innerText = "Untill " + `${convertToStamp(srt, 450)}`;//18
+   document.getElementById("நான்காவதுசாமம்தேய்பகல்நடை").innerText = "Untill " + `${convertToStamp(srt, 486)}`;//36
+	document.getElementById("நான்காவதுசாமம்தேய்பகல்ஊண்").innerText = "Untill " + `${convertToStamp(srt, 534)}`;//48
+	document.getElementById("நான்காவதுசாமம்தேய்பகல்சாவு").innerText = "Untill " + `${convertToStamp(srt,  564)}`;//30
+	document.getElementById("நான்காவதுசாமம்தேய்பகல்துயில்").innerText = "Untill " + `${convertToStamp(srt, 576)}`;//12
 
-	
-	document.getElementById("நான்காவதுசாமம்தேய்பகல்துயில்").innerText = "Untill " + `${convertToStamp(srt, 450)}`;
-	document.getElementById("நான்காவதுசாமம்தேய்பகல்சாவு").innerText = "Untill " + `${convertToStamp(srt, 462)}`;
-	document.getElementById("நான்காவதுசாமம்தேய்பகல்ஊண்").innerText = "Untill " + `${convertToStamp(srt, 492)}`;
-   document.getElementById("நான்காவதுசாமம்தேய்பகல்நடை").innerText = "Untill " + `${convertToStamp(srt, 528)}`;
-	document.getElementById("நான்காவதுசாமம்தேய்பகல்அரசு").innerText = "Untill " + `${convertToStamp(srt, 576)}`;
-
-	
-	document.getElementById("ஐந்தாவதுசாமம்தேய்பகல்சாவு").innerText = "Untill " + `${convertToStamp(srt, 588)}`;
-	document.getElementById("ஐந்தாவதுசாமம்தேய்பகல்ஊண்").innerText = "Untill " + `${convertToStamp(srt, 618)}`;
-   document.getElementById("ஐந்தாவதுசாமம்தேய்பகல்நடை").innerText = "Untill " + `${convertToStamp(srt, 654)}`;
-	document.getElementById("ஐந்தாவதுசாமம்தேய்பகல்அரசு").innerText = "Untill " + `${convertToStamp(srt, 702)}`;
-	document.getElementById("ஐந்தாவதுசாமம்தேய்பகல்துயில்").innerText = "Untill " + `${convertToStamp(srt, 720)}`;
+   document.getElementById("ஐந்தாவதுசாமம்தேய்பகல்நடை").innerText = "Untill " + `${convertToStamp(srt, 612)}`;//36
+	document.getElementById("ஐந்தாவதுசாமம்தேய்பகல்ஊண்").innerText = "Untill " + `${convertToStamp(srt, 660)}`;//48
+	document.getElementById("ஐந்தாவதுசாமம்தேய்பகல்சாவு").innerText = "Untill " + `${convertToStamp(srt, 690)}`;//30
+	document.getElementById("ஐந்தாவதுசாமம்தேய்பகல்துயில்").innerText = "Untill " + `${convertToStamp(srt, 702)}`;//12
+	document.getElementById("ஐந்தாவதுசாமம்தேய்பகல்அரசு").innerText = "Untill " + `${convertToStamp(srt, 720)}`;//18
 	
 
 	
