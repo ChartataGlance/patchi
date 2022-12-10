@@ -1,0 +1,43 @@
+   <svg viewBox="0 0 100 120" class="svgbox">
+      <rect class="heade rasi" x="0" y="0" />
+      <text x="1" y="5.5"  class="smalltx" >மேஷம்</text>
+
+      <rect class="mesam rasi" x="0" y="10" />
+      <text x="1" y="15.5"  class="smalltx" >ரிஷபம்</text>
+      <rect class="risab rasi" x="0" y="20" />
+      <text x="1" y="25.5"  class="smalltx" >மிதுனம்</text>
+      <rect class="mithu rasi" x="0" y="30" />
+      <text x="1" y="35.5"  class="smalltx" >கடகம்</text>
+      <rect class="kadak rasi" x="0" y="40" />
+      <text x="1" y="45.5"  class="smalltx" >சிம்மம்</text>
+      <rect class="simma rasi" x="0" y="50" />
+      <text x="1" y="55.5"  class="smalltx" >கன்னி</text>
+      <rect class="kanni rasi" x="0" y="60" />
+      <text x="1" y="65.5"  class="smalltx" >துலாம்</text>
+      <rect class="tulam rasi" x="0" y="70" />
+      <text x="1" y="75.5"  class="smalltx" >விருச்சிகம்</text>
+      <rect class="virut rasi" x="0" y="80" />
+      <text x="1" y="85.5"  class="smalltx" >தனுசு</text>
+      <rect class="danus rasi" x="0" y="90" />
+      <text x="1" y="95.5"  class="smalltx" >மகரம்</text>
+      <rect class="makar rasi" x="0" y="100" />
+      <text x="1" y="105.5"  class="smalltx" >கும்பம்</text>
+      <rect class="kumba rasi" x="0" y="110" />
+      <text x="1" y="115.5"  class="smalltx" >மீனம்</text>
+
+
+
+      <rect class="heade star" x="90" y="0" />
+      <rect class="mesam star" x="90" y="10" />
+      <rect class="risab star" x="90" y="20" />
+      <rect class="mithu star" x="90" y="30" />
+      <rect class="kadak star" x="90" y="40" />
+      <rect class="simma star" x="90" y="50" />
+      <rect class="kanni star" x="90" y="60" />
+      <rect class="tulam star" x="90" y="70" />
+      <rect class="virut star" x="90" y="80" />
+      <rect class="danus star" x="90" y="90" />
+      <rect class="makar star" x="90" y="100" />
+      <rect class="kumba star" x="90" y="110" />
+
+   </svg>

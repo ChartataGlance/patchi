@@ -1,40 +1,30 @@
 <html lang="en">
-
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <link rel="stylesheet" href="./cssindex.css">
-
-</head>
-
+<div id="phase"></div>
 
 <body>
 
-   <div id="phase"></div>
-   <div id="phase1"></div>
-   <div id="fraction2"></div>
-   <div id="fraction3"></div>
-   <div id="fraction4"></div>
-   <div id="fraction5"></div>
-   <div id="fraction6"></div>
-   <div id="fraction7"></div>
-   <div id="fraction8"></div>
-   <div id="fraction9"></div>
-   <div id="fraction10"></div>
-   <div id="fraction11"></div>
-   <div id="fraction12"></div>
-   <div id="fraction13"></div>
-   <div id="fraction14"></div>
-   
-<script>
 
-var today = new Date();
+   <div id="utcmine"></div>
+   <div id="utchour"></div>
+   <div id="utcmise"></div>
 
- today.setDate(today.getDate()-1);
+   <script>
+      const hourEle = document.getElementById("utchour");
+      const mineEle = document.getElementById("utcmine");
+      const miseEle = document.getElementById("utcmise");
 
-console.log(today.toDateString());
-</script>
-  
+
+      setInterval(() => {
+         var today = new Date();
+         today.setDate(today.getUTCDay());
+         hourEle.textContent = today.getUTCHours().toString().padStart(2, "0");
+         mineEle.textContent = today.getUTCMinutes().toString().padStart(2, "0");
+         miseEle.textContent = (today.getUTCSeconds()).toString().padStart(2, "0");
+      }, 100);
+
+   </script>
+   <div id="toDateString"></div>
+
 
 
    <button class="btn-1">
@@ -45,14 +35,14 @@ console.log(today.toDateString());
 
    <div class="dbl">
       <a href="./vதேய்பகல்/தேய்ஞாயிறுபகல்.html">
-         <div class="talippud"><img src="./tchicken.png">
+         <div class="talippud"><img width="100px" src="./img/patchichicken.png">
             <h5>பகல் <br> அதிகாரம் <br> <small>(inCharge)</small> </h5>
          </div>
       </a>
       <a href="./vதேய்இரவு/தேய்ஞாயிறுஇரவு.html">
          <div class="talippun">
             <h5>இரவு <br> அதிகாரம் <br> <small>(inCharge)</small> <br> நிலம்
-            </h5><img src="./tvulture.webp">
+            </h5><img width="100px" src="./img/patchivulture.png">
          </div>
       </a>
 
@@ -60,7 +50,7 @@ console.log(today.toDateString());
 
    <div class="btn-1">
       <h5>படு பட்சி <br> <small>(absent)</small> <br> நெருப்பு</h5>
-      <img src="./tcrow.png">
+      <img width="100px" src="./img/patchicrow.png">
    </div>
 
 
@@ -69,10 +59,10 @@ console.log(today.toDateString());
 
 
 
-<script src="./sunCalc.js"></script>
+   <script src="./sunCalc.js"></script>
 
 
-   
+
 </body>
 
 </html>
