@@ -1,6 +1,7 @@
 /** @format */
 
-
+//10° 47' 58.0812'' N thanjour
+//439° 8' 17.4624'' E thanjour
 navigator.geolocation.getCurrentPosition(showPosition);
 function showPosition(pos) {
 	var date = new Date().sunrise(pos.coords.latitude, pos.coords.longitude);
