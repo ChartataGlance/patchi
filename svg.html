@@ -95,22 +95,15 @@
 
    </svg>
    <script>
-      arcPie = d3.arc()
-         .innerRadius(210)
-         .outerRadius(310)
-         .padRadius(300)
-         .padAngle(2 / 300)
-         .cornerRadius(8)
 
-      htl.html`<svg viewBox="-320 -320 640 640" style="max-width: 640px;" text-anchor="middle" font-family="sans-serif">
-  ${pieArcData.map(d => htl.svg`
-    <path fill="steelblue" d="${arcPie(d)}"></path>
-    <text fill="white" transform="translate(${arcPie.centroid(d).join(",")})">
-      <tspan x="0" font-size="24">${d.data.name}</tspan>
-      <tspan x="0" font-size="12" dy="1.3em">${d.value.toLocaleString("en")}</tspan>
-    </text>
-  `)}
-</svg>`
+   //   let  svg = document.getElementsByTagName('svg')
+     let rasi = document.getElementsByClassName('rasi')
+     
+     let risaba = rasi[2].textContent
+     let newElement = document.createElement('text')
+     
+     console.dir(risaba);
+  
    </script>
 
 
