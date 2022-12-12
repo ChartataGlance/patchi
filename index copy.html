@@ -61,25 +61,25 @@
 
    <script src="./sunCalc.js"></script>
    <script>
-      if(SunCalc.getMoonTimes().isDown) {
-    document.getElementById("phase").innerText = 'seting moon';
-}else { document.getElementById("phase").innerText = 'Rising moon'; }
+      if (SunCalc.getMoonTimes().isDown) {
+         document.getElementById("phase").innerText = 'seting moon';
+      } else { document.getElementById("phase").innerText = 'Rising moon'; }
 
-navigator.geolocation.getCurrentPosition(showPosition);
-function showPosition(pos) {
-			var timenow = new Date(pos.timestamp);
-	var tnow = timenow.toTimeString();
-  
-		let tstr = tnow.split(" ");
-		const date = (SunCalc.getTimes(pos.timestamp, pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy).sunrise);
-		let srt = SunRiseTime(date);
-		document.getElementById("சூரியஉதயம்").innerText = "Sunrise Time UTC " + `${srt}` + " Time: " + `${tstr[0]} `;
-		document.getElementById("முதல்சாமம்தேய்இரவுஊண்").innerText = "start " + `${until(srt, 720).hrs}:${until(srt, 720).min}:${until(srt, 720).sec}`;//42
-		document.getElementById("இரண்டாவதுசாமம்தேய்இரவுதுயில்").innerText = "start " + `${until(srt, 864).hrs}:${until(srt, 864).min}:${until(srt, 864).sec}`;//18
-		document.getElementById("மூன்றாவதுசாமம்தேய்இரவுநடை").innerText = "start " + `${until(srt, 1008).hrs}:${until(srt, 1008).min}:${until(srt, 1008).sec}`;//42
-		document.getElementById("நான்காவதுசாமம்தேய்இரவுசாவு").innerText = "start " + `${until(srt, 1152).hrs}:${until(srt, 1152).min}:${until(srt, 1152).sec}`;//24
-		document.getElementById("ஐந்தாவதுசாமம்தேய்இரவுஅரசு").innerText = "start " + `${until(srt, 1296).hrs}:${until(srt, 1296).min}:${until(srt, 1296).sec}`;//18
-}
+      navigator.geolocation.getCurrentPosition(showPosition);
+      function showPosition(pos) {
+         var timenow = new Date(pos.timestamp);
+         var tnow = timenow.toTimeString();
+
+         let tstr = tnow.split(" ");
+         const date = (SunCalc.getTimes(pos.timestamp, pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy).sunrise);
+         let srt = SunRiseTime(date);
+         document.getElementById("சூரியஉதயம்").innerText = "Sunrise Time UTC " + `${srt}` + " Time: " + `${tstr[0]} `;
+         document.getElementById("முதல்சாமம்தேய்இரவுஊண்").innerText = "start " + `${until(srt, 720).hrs}:${until(srt, 720).min}:${until(srt, 720).sec}`;//42
+         document.getElementById("இரண்டாவதுசாமம்தேய்இரவுதுயில்").innerText = "start " + `${until(srt, 864).hrs}:${until(srt, 864).min}:${until(srt, 864).sec}`;//18
+         document.getElementById("மூன்றாவதுசாமம்தேய்இரவுநடை").innerText = "start " + `${until(srt, 1008).hrs}:${until(srt, 1008).min}:${until(srt, 1008).sec}`;//42
+         document.getElementById("நான்காவதுசாமம்தேய்இரவுசாவு").innerText = "start " + `${until(srt, 1152).hrs}:${until(srt, 1152).min}:${until(srt, 1152).sec}`;//24
+         document.getElementById("ஐந்தாவதுசாமம்தேய்இரவுஅரசு").innerText = "start " + `${until(srt, 1296).hrs}:${until(srt, 1296).min}:${until(srt, 1296).sec}`;//18
+      }
    </script>
 
 

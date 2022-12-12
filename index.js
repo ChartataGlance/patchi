@@ -4,7 +4,7 @@ const timeElement = document.querySelector(".time");
 const dateElement = document.querySelector(".date");
 
 /**
- * @param {Date} date
+*  @param {Date} date
  */
 function formateTime(date) {
 	const hours12 = date.getHours();

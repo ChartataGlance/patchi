@@ -39,7 +39,7 @@
    <meta property="twitter:description" content="தேய்பிறை & தேய்பிறை கிழமைகளில் அதிகார பட்சி & மற்றும் படுபட்சி">
    <meta property="og:image" content="#">
 
-  
+
    <title>பஞ்ச பட்சி ரத்தினம்</title>
 
 
@@ -48,7 +48,7 @@
 
 
 <body>
-   <header >
+   <header>
       <center>
          <div class="headerimgs">
             <img width="60" src="../img/patchicrow.png">
@@ -60,17 +60,19 @@
       </center>
       <center>
          <div><a style="text-decoration: none; " href="/">
-               <h1  class="headlineh1">பஞ்ச பட்சி ரத்தினம்</h1>
+               <h1 class="headlineh1">பஞ்ச பட்சி</h1>
             </a>
          </div>
          <div class="datetime">
             <div class="time"></div>
             <div class="date"></div>
          </div>
+         <div id="சூரியஉதயம்"></div>
       </center>
-      <div id="சூரியஉதயம்"></div>
    </header>
    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&display=swap");
+
       * {
          margin: 0;
          padding: 0;
@@ -81,19 +83,23 @@
       :root {
          --onew: 70vh;
          --oned: calc(var(--onew)/6);
-         --with: calc(100vw/2.2);
+         --with: 100vw;
       }
 
       body {
          margin: 0 auto;
          min-width: 333px;
          background-color: rgb(12, 5, 41);
+         background-image: url(../img/mayilbackdrop.jfif);
+         background-repeat: no-repeat;
+         background-size: cover;
+         font-family: "Hind Madurai", sans-serif;
       }
 
       .oneweek {
          min-height: var(--onew);
          margin: 0 auto;
-         background: rgba(12, 62, 90, 0.47);
+         background: rgba(12, 61, 90, 0.5);
          display: flex;
          justify-content: center;
 
@@ -107,7 +113,8 @@
          max-width: 333px;
          min-height: 433px;
          border-radius: 1vh;
-         box-shadow: 1px 1px 1px rgb(45, 41, 41), -1px -1px 1px rgb(41, 38, 38);
+         background: rgba(17, 9, 92, 0.818);
+         box-shadow: 1px 1px 6px rgba(22, 31, 2, 0.558), -1px -1px 1px rgb(41, 38, 38);
          position: relative;
 
       }
@@ -162,9 +169,6 @@
       }
 
 
-
-
-
       .பகல்img {
          position: absolute;
          right: 10%;
@@ -205,8 +209,7 @@
       }
 
       .படுபட்சி {
-         opacity: 0.4;
-         position: relative;
+         opacity: 0.33;
          border-radius: 10px;
          color: antiquewhite;
          text-align: center;
@@ -214,22 +217,41 @@
          position: absolute;
          transform: translate(-50%, -50%);
          left: 14.6%;
-         bottom: -30%;
-         background: rgba(9, 93, 211, 0.367);
-         border: 1px solid #fff;
-         border-radius: 50%;
+         bottom: -25%;
+
+         box-shadow: 0.1px 0.1px 1px #c5df1c;
+         /* border: 1px solid #fff; */
+         /* border-radius: 50%; */
       }
 
       .படுபட்சிimg {
-         height: 50px;
+         height: 66px;
+      }
+
+      .படுபட்சி:hover {
+         opacity: 1;
+         box-shadow: 0.7px 0.7px 1.5px #c5df1c;
+         background: rgba(9, 93, 211, 0.105);
+      }
+
+      .valar {
+         display: none;
+      }
+
+      .thei {
+         display: none;
+      }
+
+      .active {
+         display: block;
       }
    </style>
 
    <article class="oneweek">
 
-      <section class="வளர் பிறை">
+      <section class="வளர்பிறை">
 
-         <div class="oneval valar ஞாயிறு">
+         <div class="oneval valar ஞாயிறு ">
 
             <div class="weekday">
                <h6>வளர் பிரை</h6>
@@ -462,7 +484,7 @@
       </section>
 
 
-      <section class="தேய் பிறை">
+      <section class="தேய்பிறை">
          <!--  -->
          <div class="oneval thei ஞாயிறு">
             <div class="weekday">
@@ -687,14 +709,38 @@
    </article>
 
    <footer>
-      <center><a style="color: rgb(204, 207, 222);" href="https://www.PanchaPatchi.com/contact.html">By Rama</a></center>
+      <center><a style="color: rgb(204, 207, 222);" href="https://www.PanchaPatchi.com/contact.html">By Rama</a>
+      </center>
       <a href="https://www.PanchaPatchi.com">
          <center>
             <p style="color: aliceblue; padding: 20px;  ">&copy; PanchaPatchi.com | All Rights Reserved</p>
          </center>
       </a>
    </footer>
-<script src="./sunCalc.js"></script>
+   <script src="./sunCalc.js"></script>
+   <script>
+
+
+      navigator.geolocation.getCurrentPosition(showPosition);
+      function showPosition(pos) {
+         const date = (SunCalc.getTimes(pos.timestamp, pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy).sunrise);
+         let srt = SunRiseTime(date);
+         document.getElementById("சூரியஉதயம்").innerText = "Sunrise Time " + `${srt}`;
+      }
+      const today = new Date();
+      if (SunCalc.getMoonTimes().isDown) {
+         தேய்பிறை = document.getElementsByClassName('தேய்பிறை')
+         let activeDiv = தேய்பிறை[0].children[today.getDay()]
+         activeDiv.classList.add('active')
+      } else {
+         வளர்பிறை = document.getElementsByClassName('வளர்பிறை')
+         let activeDiv = வளர்பிறை[0].children[today.getDay()]
+         activeDiv.classList.add('active')
+      }
+
+
+   </script>
+
 </body>
 
 </html>
