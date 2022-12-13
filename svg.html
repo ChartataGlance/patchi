@@ -43,8 +43,8 @@
    .smalltx {
 
       font-size: 0.2ch;
-      color: wheat;
-      text-align: center;
+      fill: wheat;
+      
    }
 </style>
 
@@ -99,10 +99,13 @@
    //   let  svg = document.getElementsByTagName('svg')
      let rasi = document.getElementsByClassName('rasi')
      
-     let risaba = rasi[2].textContent
+     let risaba = rasi[2]
      let newElement = document.createElement('text')
+     newElement.textContent = "i am new"
+     newElement.cssText= "x='1' y='15.5"
+     risaba.appendChild(newElement)
      
-     console.dir(risaba);
+     console.log(risaba);
   
    </script>
 

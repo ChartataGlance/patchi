@@ -44,9 +44,71 @@
    <link rel="stylesheet" href="../css/அழகு.css">
    <script defer src="../index.js"></script>
 </head>
+<style>
+   * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+   }
 
+   :root {
+      --onew: 66.6vh;
+      --onedivheight: calc(var(--onew)/6);
+      --width: calc(100vw/2.2);
+   }
+
+   body {
+      margin: 0 auto;
+      min-width: 333px;
+      background-color: rgb(12, 5, 41);
+      background-image: url(../img/mayilbackdrop.jfif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: "Hind Madurai", sans-serif;
+   }
+
+   .panchapatchi {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+   }
+
+   .patchi {
+      min-width: 333px;
+      width: var(--width);
+      min-height: var(--onedivheight);
+      background: rgb(5, 65, 91);
+      border: 0.1ch solid #fff;
+      margin: 0 auto;
+
+   }
+
+   .peacock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: var(--onedivheight);
+
+   }
+
+   p {
+      color: aliceblue;
+      padding: 20px;
+      text-transform: capitalize;
+   }
+
+   footer {
+      position: absolute;
+      bottom: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+</style>
 
 <body>
+
    <header>
       <center>
          <div class="headerimgs">
@@ -57,157 +119,51 @@
             <img width="60" src="../img/patchivulture.png">
          </div>
       </center>
-      <center>
-         <div><a style="text-decoration: none; " href="/">
-               <h1 style="font-family: 'Coiny', cursive;" class="headlineh1">பஞ்ச பட்சி</h1>
-            </a></div>
-         <div class="datetime">
-            <div class="time"></div>
-            <div class="date"></div>
-         </div>
-
-         <div style="color: aliceblue;" id="phase"></div>
-         <div id="சூரியஉதயம்"></div>
-      </center>
-
-
    </header>
 
+   <article class="panchapatchi">
+      <section class="patchi">
 
-
-
-   <article class="சாமம் முதல்">
-
-      <section class="சாமம்-தொழில் தொழில்1">
-
-         <table width="100%">
-            <thead>
-               <h>முதல் சாமம்</h>
-               <tr>
-                  <th>தேய் பிறை</th>
-                  <th>சனி</th>
-                  <th>இரவு </th>
-               </tr>
-            </thead>
-         </table>
-
-         <picture style="width:84%;" class="தொழில்-பட்சி">
-            <img width="66%" src="../img/patchichicken.png">
-         </picture>
-
-         <div class="injecttime">
-            <h2 class="தொழில்">ஊண் 42min</h2>
-            <h2 id="முதல்சாமம்தேய்இரவுஊண்"></h2>
-         </div>
+         <center>
+            <p>
+               This website is all about panchapatchi
+            </p>
+         </center>
+         <p>
+            Understanding The Structure <br>
+         </p>
 
       </section>
+      <section class="patchi">
+         <p> Website Completely redesigned 2022 / dec, <br>
+            time table with time calculation based on local sunrise , <br>
+            requires geoLocation to calculate sunrise
 
-      <section class="சாமம்-தொழில் தொழில்1">
-         <table width="100%">
-            <thead>
-               <h5>இரண்டாவது சாமம்</h5>
-               <tr>
-                  <th>தேய் பிறை</th>
-                  <th>சனி</th>
-                  <th>இரவு </th>
-               </tr>
-            </thead>
-         </table>
-
-         <picture style="width:36%;" class="தொழில்-பட்சி">
-            <img width="66%" src="../img/patchichicken.png">
-         </picture>
-         <div class="injecttime">
-            <h2 class="தொழில்">துயில் 18min</h2>
-            <h2 id="இரண்டாவதுசாமம்தேய்இரவுதுயில்"></h2>
-         </div>
-
-
+         </p>
+         <p> </p>
       </section>
-
-      <section class="சாமம்-தொழில் தொழில்1">
-         <table width="100%">
-            <h5>மூன்றாவது சாமம்</h5>
-            <thead>
-               <tr>
-                  <th>தேய் பிறை</th>
-                  <th>சனி</th>
-                  <th>இரவு </th>
-               </tr>
-            </thead>
-         </table>
-         <picture style="width:84%;" class="தொழில்-பட்சி">
-            <img width="66%" src="../img/patchichicken.png">
-         </picture>
-
-         <div class="injecttime">
-            <h2 class="தொழில்">நடை 42min</h2>
-            <h2 id="மூன்றாவதுசாமம்தேய்இரவுநடை"></h2>
-         </div>
+      <section class="patchi">
+         <p>More Update is Coming . . . .</p>
       </section>
-
-      <section class="சாமம்-தொழில் தொழில்1">
-
-         <table width="100%">
-            <h5>நான்காவது சாமம்</h5>
-            <thead>
-               <tr>
-                  <th>தேய் பிறை</th>
-                  <th>சனி</th>
-                  <th>இரவு </th>
-               </tr>
-            </thead>
-         </table>
-
-         <picture style="width:48%;" class="தொழில்-பட்சி">
-            <img width="66%" src="../img/patchichicken.png">
-         </picture>
-         <div class="injecttime">
-            <h2 class="தொழில்">சாவு 24min</h2>
-            <h2 id="நான்காவதுசாமம்தேய்இரவுசாவு"></h2>
-         </div>
-
-
-
-
+      <section class="patchi">
+         <p>email your feedback <br> rama@panchapatchi.com </p>
       </section>
-
-      <section class="சாமம்-தொழில் தொழில்1">
-
-         <table width="100%">
-            <h5>ஐந்தாவது சாமம்</h5>
-            <thead>
-               <tr>
-                  <th>தேய் பிறை</th>
-                  <th>சனி</th>
-                  <th>இரவு </th>
-               </tr>
-            </thead>
-         </table>
-
-         <picture style="width:36%;" class="தொழில்-பட்சி">
-            <img width="66%" src="../img/patchichicken.png">
-         </picture>
-         <div class="injecttime">
-            <h2 class="தொழில்">அரசு 18min</h2>
-            <h2 id="ஐந்தாவதுசாமம்தேய்இரவுஅரசு"></h2>
-         </div>
-
-
-
-
-
-      </section>
-
-
-
    </article>
 
-   <script src="./sunCalc.js"></script>
-   <script>
 
 
-   </script>
+
+
+
+   <footer>
+      <center><a style="color: rgb(204, 207, 222); " href="https://www.PanchaPatchi.com/contact.html">By Rama</a>
+      </center>
+      <a href="https://www.PanchaPatchi.com">
+         <center>
+            <p style="color: aliceblue; padding: 20px;  ">&copy; PanchaPatchi.com | All Rights Reserved</p>
+         </center>
+      </a>
+   </footer>
 </body>
 
 </html>
