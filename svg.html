@@ -44,7 +44,7 @@
 
       font-size: 0.2ch;
       fill: wheat;
-      
+
    }
 </style>
 
@@ -94,19 +94,36 @@
       <rect class="kumba star" x="90" y="110" />
 
    </svg>
-   <script>
+   <!-- <svg width="500" height="500">
+      <use xlink:href="#" x="10" y="10" />
+   </svg> -->
 
-   //   let  svg = document.getElementsByTagName('svg')
-     let rasi = document.getElementsByClassName('rasi')
-     
-     let risaba = rasi[2]
-     let newElement = document.createElement('text')
-     newElement.textContent = "i am new"
-     newElement.cssText= "x='1' y='15.5"
-     risaba.appendChild(newElement)
-     
-     console.log(risaba);
-  
+   <script>
+      var svg = document.getElementById("my-svg");
+
+       var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+      rect.setAttribute("x", 10);
+      rect.setAttribute("y", 10);
+      rect.setAttribute("width", 50);
+      rect.setAttribute("height", 50);
+      rect.setAttribute("fill", "blue");
+
+      svg.appendChild(rect);
+
+      // var svg = document.getElementById("my-svg");
+
+       svg.innerHTML = "<rect x='10' y='10' width='50' height='50' fill='blue' />";
+
+      // //   let  svg = document.getElementsByTagName('svg')
+      // let rasi = document.getElementsByClassName('rasi')
+      // let risaba = rasi[2]
+      // let newElement = document.createElement('text')
+      // newElement.textContent = "i am new"
+      // newElement.cssText = "x='1' y='15.5"
+      // risaba.appendChild(newElement)
+
+      console.log(my-svg);
+
    </script>
 
 

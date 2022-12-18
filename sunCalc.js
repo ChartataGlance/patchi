@@ -292,8 +292,7 @@
 		// go in 2-hour chunks, each time seeing if a 3-point quadratic curve crosses zero (which means rise or set)
 		for (var i = 1; i <= 24; i += 2) {
 			h1 = SunCalc.getMoonPosition(hoursLater(t, i), lat, lng).altitude - hc;
-			h2 =
-				SunCalc.getMoonPosition(hoursLater(t, i + 1), lat, lng).altitude - hc;
+			h2 = SunCalc.getMoonPosition(hoursLater(t, i + 1), lat, lng).altitude - hc;
 
 			a = (h0 + h2) / 2 - h1;
 			b = (h2 - h0) / 2;
@@ -334,7 +333,6 @@
 		return result;
 	};
 
-
 	// export as Node module / AMD module / browser variable
 	if (typeof exports === "object" && typeof module !== "undefined")
 		module.exports = SunCalc;
@@ -343,24 +341,23 @@
 })();
 
 function SunRiseTime(date) {
-    let str = date.toString();
-    let sunRise = str.split(" ");
-    return sunRise[4];
- }
- 
- function until(srmin, addmin) {
+	let str = date.toString();
+	let sunRise = str.split(" ");
+	return sunRise[4];
+}
+
+function until(srmin, addmin) {
 	let split = srmin.split(":");
 	var splith = split[0] * 60 * 60;
 	var splitm = split[1] * 60;
 	var total = addmin + (splith + splitm) / 60;
-	var calchours = Math.floor(total / 60) % 24 || 24 ;
+	var calchours = Math.floor(total / 60) % 24 || 24;
 	var calcminutes = total % 60;
-	
+
 	return {
 		hrs: calchours.toString().padStart(2, "0"),
 		min: calcminutes.toString().padStart(2, "0"),
-		sec: seconds = split[2]
-
+		sec: (seconds = split[2]),
 	};
 }
 

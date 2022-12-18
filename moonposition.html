@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta http-equiv="refresh" content="72000">
+   <meta http-equiv="pragma" content="no-cache" />
+   <meta http-equiv="Clear-Site-Data" content="*" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <META name="robots" content="index,follow">
+   <meta name="theme-color" content="#0D0D2C">
+   <META name="revisit-after" content="1 Days">
+
+   <meta name="description" content="பஞ்சபட்சி">
+   <META NAME="Keywords" CONTENT="பஞ்ச பட்சி ரத்தினம்  அதிகார பட்சி & மற்றும் படுபட்சி">
+   <META NAME="author" content="chartataglance">
+   <META NAME="copyright" content="chartataglance">
+   <META NAME="language" content="en-us">
+   <META NAME="rating" content="General">
+   <meta name="next-head-count" content="1">
+
+   <!-- Google Tag Manager -->
+   <link rel="icon" type="image/png" href="../tvulture.webp">
+   <link rel="canonical" href="https://PanchaPatchi.com">
+
+
+   <meta property="og:site_name" content="பஞ்சபட்சி">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://PanchaPatchi.com">
+   <meta property="og:description" content="தேய்பிறை & தேய்பிறை">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:site" content="@chartataglance">
+   <meta name="twitter:creator" content="@chartataglance">
+
+
+   <meta property="og:title" content="பஞ்ச பட்சி">
+   <meta property="twitter:description" content="தேய்பிறை & தேய்பிறை கிழமைகளில் அதிகார பட்சி & மற்றும் படுபட்சி">
+   <meta property="og:image" content="#">
+
+
+   <title>பஞ்ச பட்சி ரத்தினம்</title>
+
+
+</head>
+
+<body>
+   <header>
+      <center>
+         <div class="headerimgs">
+            <img width="60" src="../img/patchicrow.png">
+            <img width="60" src="../img/patchiowl.png">
+            <img width="90" src="../img/patchipeacock.png">
+            <img width="60" src="../img/patchichicken.png">
+            <img width="60" src="../img/patchivulture.png">
+         </div>
+      </center>
+      <center>
+         <div><a style="text-decoration: none; " href="/">
+               <h1 class="headlineh1">பஞ்ச பட்சி</h1>
+            </a>
+         </div>
+         <div class="datetime">
+            <div class="time"></div>
+            <div class="date"></div>
+         </div>
+         <div id="சூரியஉதயம்"></div>
+      </center>
+   </header>
+   <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&display=swap");
+
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+
+      }
+
+      :root {
+         --onew: 70vh;
+         --oned: calc(var(--onew)/6);
+         --with: calc(100vw/2.2);
+      }
+
+      body {
+         margin: 0 auto;
+         min-width: 333px;
+         background-color: rgb(12, 5, 41);
+         /* background-image: url(../img/mayilbackdrop.jfif); */
+         background-repeat: no-repeat;
+         background-size: cover;
+         font-family: "Hind Madurai", sans-serif;
+      }
+
+      .moontimes {
+         background: grey;
+         width: 333px;
+         height: 333px;
+         margin: 0 auto;
+         color: aliceblue;
+      }
+   </style>
+<div class="moontimes">
+ <div id="moonillu"></div>
+   <div id="moonfrac"></div>
+   <div id="moonangl"></div>
+   <div id="moonazi"></div>
+   <div id="moonalt"></div>
+   <div id="moondis"></div>
+   <div id="moonparallacticAngle"></div>
+
+</div>
+   <script src="./sunCalc.js"></script>
+   <script>
+      const today = new Date();
+      navigator.geolocation.getCurrentPosition(showPos);
+      function showPos(pos) {
+         // console.log(SunCalc.getMoonPosition(today, pos.coords.latitude, pos.coords.longitude));
+         // console.log(SunCalc.getMoonTimes(today, pos.coords.latitude, pos.coords.longitude));
+         // console.log(SunCalc.getMoonIllumination(today));
+
+         let moonillu = SunCalc.getMoonIllumination(today).phase
+         let moonfrac = SunCalc.getMoonIllumination(today).fraction
+         let moonangl = SunCalc.getMoonIllumination(today).angle
+
+         let moonazimuth = SunCalc.getMoonPosition(today, pos.coords.latitude, pos.coords.longitude).azimuth
+         let moonaltitude = SunCalc.getMoonPosition(today, pos.coords.latitude, pos.coords.longitude).altitude
+         let moondistance = SunCalc.getMoonPosition(today, pos.coords.latitude, pos.coords.longitude).distance
+         let moonparal = SunCalc.getMoonPosition(today, pos.coords.latitude, pos.coords.longitude).parallacticAngle
+
+         const date = (SunCalc.getTimes(today, pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy).sunrise);
+         let srt = SunRiseTime(date);
+         document.getElementById("சூரியஉதயம்").innerText = "Sunrise Time " + `${srt}`;
+         document.getElementById("moonillu").innerText = "phase " + `${moonillu}`;
+         document.getElementById("moonfrac").innerText = "fraction " + `${moonfrac}`;
+         document.getElementById("moonangl").innerText = "angle " + `${moonangl}`;
+         document.getElementById("moonazi").innerText = "azimuth " + `${moonazimuth}`;
+         document.getElementById("moonalt").innerText = "altitude " + `${moonaltitude}`;
+         document.getElementById("moonparallacticAngle").innerText = "parallacticAngle " + `${moonparal}`;
+
+      }
+   </script>
+
+</body>
+
+</html>
