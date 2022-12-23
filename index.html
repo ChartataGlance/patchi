@@ -730,6 +730,9 @@
       <a href="./பஞ்சபூதங்கள்.html">
          <h3>பஞ்சபூதங்கள்</h3>
       </a>
+      <a href="./moonposition.html">
+         <h6>Moonposition</h6>
+      </a>
 
    </center>
 
@@ -755,7 +758,7 @@
          document.getElementById("சூரியஉதயம்").innerText = "Sunrise Time " + `${srt}`;
       }
 
-      if (SunCalc.getMoonTimes().isDown) {
+      if (SunCalc.getMoonTimes().isDown, false) {
          தேய்பிறை = document.getElementsByClassName('தேய்பிறை')
          let activeDiv = தேய்பிறை[0].children[today.getDay()]
          activeDiv.classList.add('active')

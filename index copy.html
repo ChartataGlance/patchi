@@ -19,13 +19,11 @@
          today.setDate(today.getUTCDay());
          hourEle.textContent = today.getUTCHours().toString().padStart(2, "0");
          mineEle.textContent = today.getUTCMinutes().toString().padStart(2, "0");
-         miseEle.textContent = (today.getUTCSeconds()).toString().padStart(2, "0");
+         miseEle.textContent = today.getUTCSeconds().toString().padStart(2, "0");
       }, 100);
 
    </script>
    <div id="toDateString"></div>
-
-
 
    <button class="btn-1">
       <h5>தேய் பிரை</h5>
@@ -65,15 +63,15 @@
          document.getElementById("phase").innerText = 'seting moon';
       } else { document.getElementById("phase").innerText = 'Rising moon'; }
 
-      navigator.geolocation.getCurrentPosition(showPosition);
-      function showPosition(pos) {
+      navigator.geolocation.getCurrentPosition(showPos);
+      function showPos(pos) {
          var timenow = new Date(pos.timestamp);
          var tnow = timenow.toTimeString();
 
          let tstr = tnow.split(" ");
          const date = (SunCalc.getTimes(pos.timestamp, pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy).sunrise);
          let srt = SunRiseTime(date);
-         document.getElementById("சூரியஉதயம்").innerText = "Sunrise Time UTC " + `${srt}` + " Time: " + `${tstr[0]} `;
+         document.getElementById("சூரியஉதயம்").innerText = "Sunrise Time UTC " + `${srt}` + " Time: " + `${tstr[0]}`;
          document.getElementById("முதல்சாமம்தேய்இரவுஊண்").innerText = "start " + `${until(srt, 720).hrs}:${until(srt, 720).min}:${until(srt, 720).sec}`;//42
          document.getElementById("இரண்டாவதுசாமம்தேய்இரவுதுயில்").innerText = "start " + `${until(srt, 864).hrs}:${until(srt, 864).min}:${until(srt, 864).sec}`;//18
          document.getElementById("மூன்றாவதுசாமம்தேய்இரவுநடை").innerText = "start " + `${until(srt, 1008).hrs}:${until(srt, 1008).min}:${until(srt, 1008).sec}`;//42
