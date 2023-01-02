@@ -65,22 +65,78 @@
             <div class="date"></div>
          </div>
       </div>
-      
+
       <div class="contactform">
          <h3>Rama@panchapatchi.com</h3>
       </div>
+      <style>
+         .side-nav {
+            position: fixed;
+            background: #e91e63;
+            left: 0;
+            top: 0;
+            width: 10vw;
+
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+            background: linear-gradient(#00bcd4, #e91e63, #3f51b5, #00bcd4);
+            background-size: 100% 500%;
+            background-position: 0 40%;
+            /* opacity: 0.4; */
+            /* background-image: url(./dayearth.png); */
+         }
+
+         .side-nav {
+            animation: backcolor 20s linear infinite reverse;
+         }
+
+         @keyframes backcolor {
+            0% {
+               background-position: 0 0%;
+            }
+
+            100% {
+               background-position: 0 400%;
+            }
+         }
+
+         .side-nav img {
+            border-radius: 33% 33% 20px 20px;
+         }
+
+         .side-nav a {
+            color: azure;
+            transform: rotate(-90deg) translateX(50%);
+            width: max-content;
+            text-decoration: none;
+            letter-spacing: 2.5em;
+            font-size: clamp(2rem, 100vh, 3rem);
+            font-weight: 700;
+
+         }
+      </style>
+      <div class="side-nav">
+         <img width="66px" src="./rama.svg">
+         <a href="#">Rama</a>
+      </div>
+
    </header>
 
 
    <style>
       @import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@500&family=Hind+Madurai:wght@500&display=swap');
 
-:root{
-   --anek: 'Anek Tamil', sans-serif;
-   --madurai: 'Hind Madurai', sans-serif;
-}
+      :root {
+         --anek: 'Anek Tamil', sans-serif;
+         --madurai: 'Hind Madurai', sans-serif;
+      }
+
       .contactform {
-        height: 20vh;
+         height: 20vh;
 
          color: aliceblue;
          letter-spacing: 0.3rem;
@@ -111,7 +167,7 @@
          </a> -->
       </div>
    </div>
- 
+
    <footer>
       <center><a style="color: rgb(2, 6, 26);" href="https://www.PanchaPatchi.com/contact.html">By Rama</a></center>
       <a href="https://www.PanchaPatchi.com">

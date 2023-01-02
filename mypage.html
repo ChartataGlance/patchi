@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <style>
+   @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{ 
+   margin: 0;
+   padding: 0;
+   font-family: 'Ubuntu', sans-serif;
+   box-sizing: border-box;
+}
+body{
+   background: rgb(9, 33, 67);
+}
+header{
+   width: 90vw;
+   margin-left: 10vw;
+   height: 100vh;
+   background: #000942;
+   padding-left: 11%;
+   padding-right: 8%;
+   position: relative;
+  
+   background-image: url(./dayearth.png);
+   background-size: 66%;
+   background-repeat: no-repeat;
+   background-position: -50% 66%;
+   
+  
+}
+.top-nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 30px 0 15px;
+   border-bottom: 1px  solid #bababa;
+   z-index: 5;
+}
+.top-nav ul li{
+   list-style: none;
+   display: inline-block;
+   margin-right: 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   /* margin-left: 60px; */
+}
+.top-nav ul li:nth-child(1){
+   margin-left: 50px;
+   color: #d1e91e;
+   
+}
+.top-nav ul li a{
+   text-decoration: none;
+   color: azure;
+   font-size: 1rem;
+
+}
+.top-nav button{
+   background: #e91e63;
+   color: azure;
+   border: 0;
+   outline: 0;
+   border-radius: 30px;
+   padding: 10px 20px;
+   cursor: pointer;
+}
+
+.side-nav{
+   position: fixed;
+   background: #e91e63;
+   left: 0;
+   top: 0;
+   width: 10vw;
+   
+   height: 100vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+   padding: 50px;
+   background: linear-gradient(#00bcd4, #e91e63, #3f51b5, #00bcd4);
+   background-size: 100% 500%;
+   background-position: 0 40%;
+   /* opacity: 0.4; */
+   /* background-image: url(./dayearth.png); */
+}
+
+.side-nav{
+   animation: backcolor 20s linear infinite reverse;
+}
+@keyframes backcolor {
+   0%{ background-position: 0 0%;}
+   100%{ background-position: 0 400%;}
+}
+.side-nav img{
+  border-radius: 33% 33% 20px 20px;
+}
+
+.side-nav a{
+   color: azure;
+   transform: rotate(-90deg) translateX(50%);
+   width: max-content;
+   text-decoration: none;
+   letter-spacing: 2.5em;
+   font-size: clamp(2rem, 100vh, 3rem);
+   font-weight: 700;
+
+}
+
+</style>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+   <title>Design</title>
+</head>
+
+<body>
+   <header>
+      <div class="side-nav">
+         <img width="66px" src="./rama.svg">
+         <a href="#">Rama</a>
+      </div>
+   </header>
+
+
+
+</body>
+
+</html>
