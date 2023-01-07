@@ -758,7 +758,8 @@
          document.getElementById("சூரியஉதயம்").innerText = "Sunrise Time " + `${srt}`;
       }
 
-      if (SunCalc.getMoonTimes().isDown, false) {
+      let mphase = SunCalc.getMoonIllumination(today).phase
+      if (mphase > 0.50 ) {
          தேய்பிறை = document.getElementsByClassName('தேய்பிறை')
          let activeDiv = தேய்பிறை[0].children[today.getDay()]
          activeDiv.classList.add('active')
