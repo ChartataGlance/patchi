@@ -5,6 +5,46 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/அழகு.css">
+   <html>
+  <head>
+    <title>The title of the page</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.panchapatchi.com/",
+      "potentialAction": [{
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://query.example.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },{
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "android-app://com.example/https/query.example.com/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }]
+    }
+    </script>
+    <div itemscope itemtype="https://schema.org/WebSite">
+      <meta itemprop="url" content="https://www.example.com/"/>
+
+      <form itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+         
+        <meta itemprop="target" content="https://query.example.com/search?q={search_term_string}"/>
+        <input itemprop="query-input" type="text" name="search_term_string" required/>
+        <input type="submit"/>
+      </form>
+    </div>
+      
+  </head>
+  <body>
+  </body>
+</html>
    <title>picker</title>
 </head>
 <body>
