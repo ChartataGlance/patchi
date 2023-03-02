@@ -123,3 +123,12 @@ table{
 		height: calc(80vh/5 );
 	}
 }
+
+.அட்சரம்{
+	position: absolute;
+	left: 0;
+}
+.அட்சரம் img{
+	width: 108px;
+	height: 108px;
+}
