@@ -345,6 +345,11 @@ function SunRiseTime(date) {
 	let sunRise = str.split(" ");
 	return sunRise[4];
 }
+function SunSetTime(date) {
+	let str = date.toString();
+	let sunSet = str.split(" ");
+	return sunSet[4];
+}
 
 function until(srmin, addmin) {
 	let split = srmin.split(":");

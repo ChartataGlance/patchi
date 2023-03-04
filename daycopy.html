@@ -1,0 +1,193 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta http-equiv="refresh" content="72000">
+   <meta http-equiv="pragma" content="no-cache" />
+   <meta http-equiv="Clear-Site-Data" content="*" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <META name="robots" content="index,follow">
+   <meta name="theme-color" content="#0D0D2C">
+   <META name="revisit-after" content="1 Days">
+
+   <meta name="description" content="பஞ்சபட்சி">
+   <META NAME="Keywords" CONTENT="வளர்பிறை & தேய்பிறை கிழமைகளில் அதிகார பட்சி & மற்றும் படுபட்சி">
+   <META NAME="author" content="chartataglance">
+   <META NAME="copyright" content="chartataglance">
+   <META NAME="language" content="en-us">
+   <META NAME="rating" content="General">
+   <meta name="next-head-count" content="1">
+
+   <!-- Google Tag Manager -->
+   <link rel="icon" type="image/png" href="../tvulture.webp">
+   <link rel="canonical" href="https://PanchaPatchi.com">
+
+
+   <meta property="og:site_name" content="பஞ்சபட்சி">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://PanchaPatchi.com">
+   <meta property="og:description" content="வளர்பிறை & தேய்பிறை கிழமைகளில் அதிகார பட்சி & மற்றும் படுபட்சி">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:site" content="@chartataglance">
+   <meta name="twitter:creator" content="@chartataglance">
+
+
+   <meta property="og:title" content="பஞ்ச பட்சி">
+   <meta property="twitter:description" content="வளர்பிறை & தேய்பிறை கிழமைகளில் அதிகார பட்சி & மற்றும் படுபட்சி">
+   <meta property="og:image" content="#">
+
+   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+   <title>பஞ்ச பட்சி</title>
+   <!-- <link rel="stylesheet" href="../wan/style.css"> -->
+   <script defer src="./index.js"></script>
+</head>
+
+<body>
+   <header>
+      <div id="home" class="headline">
+         <h1><a style="list-style: none; text-decoration: none; " href="/">பஞ்ச பட்சி</a></h1>
+
+         <div class="datetime">
+            <div class="time"></div>
+            <div class="date"></div>
+         </div>
+      </div>
+   </header>
+   <style>
+      body{
+         background: rgba(5, 5, 73, 0.491);
+      }
+
+      .talippuc {
+
+         margin: 25px;
+         max-width: 333px;
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         gap: 1em;
+         padding: 1em;
+         background: #0095;
+         border-radius: 5px;
+         box-shadow: 0 0 5px rgba(0 0 0 /0.5);
+         color: aliceblue;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .untill__component {
+         text-align: center;
+         background: #009;
+         border-radius: 5px;
+      }
+
+      .untill__numeric {
+         color: rgb(247, 242, 247);
+         padding: 0.5em 0;
+         font-size: 1.5em;
+      }
+
+      .untill__unit {
+         color: rgb(85, 170, 29);
+      }
+
+      .untill__event {
+         grid-column: span 4;
+      }
+   </style>
+   <center>
+
+      <center>
+         <div id="localsunrise"></div>
+      </center>
+      
+      <div class="talippuc" id="myCountdown">
+
+         <div class="untill">
+            <div class="untill__component">
+               <div class="untill__numeric untill__numeric--days">00</div>
+               <div class="untill__unit">days</div>
+            </div>
+         </div>
+         <div class="untill">
+            <div class="untill__component">
+               <div class="untill__numeric untill__numeric--hours">00</div>
+               <div class="untill__unit">hours</div>
+            </div>
+         </div>
+         <div class="untill">
+            <div class="untill__component">
+               <div class="untill__numeric untill__numeric--minutes">00</div>
+               <div class="untill__unit">minute</div>
+            </div>
+         </div>
+         <div class="untill">
+            <div class="untill__component">
+               <div class="untill__numeric untill__numeric--seconds">00</div>
+               <div class="untill__unit">seconds</div>
+            </div>
+         </div>
+         <div class="untill__event"></div>
+      </div>
+   </center>
+
+
+
+
+
+
+   <script defer src="./sun.js"></script>
+
+   <script src="./injectTime.js"></script>
+
+
+  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.6/dayjs.min.js"
+      integrity="sha512-hcV6DX35BKgiTiWYrJgPbu3FxS6CsCjKgmrsPRpUPkXWbvPiKxvSVSdhWX0yXcPctOI2FJ4WP6N1zH+17B/sAA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.6/plugin/duration.min.js"
+      integrity="sha512-QxVJ3lAILV0RSq3wPNV5CFNyyywxd5QfA9jfGfzVViwpL/eWSi5dR1nZMc02c+QE4xz2L1eQvx/fn18RrUq9lw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script  src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.6/plugin/isTomorrow.min.js"
+      integrity="sha512-vLarZYh+kxl2xV1XWlR4a1RmYYMo4x/wKxGoEej5Pl0GocYdniaoNX59/Yi5mbkSWvEbU2KG8xDGrbf5Z+rLKw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <script>
+
+      navigator.geolocation.getCurrentPosition(showPosition);
+      function showPosition(position) {
+         var date = new Date().sunrise(position.coords.latitude, position.coords.longitude)
+
+
+
+         // dayjs.extend(isTomorrow);
+         dayjs.extend(dayjs_plugin_duration);
+
+         function activateCountdown(element, dateString) {
+            const targetDate = dayjs().add(1, 'day')
+            
+            element.querySelector(".untill__event").textContent = `Untill ${targetDate.format('ddd, MMM D, YYYY h:mm')}`
+
+
+            setInterval(() => {
+
+               // const sunrise = SunRiseTime(date)
+               const now = dayjs(date).format('ddd, MMM D, YYYY h:mm')
+
+               
+               const duration = dayjs.duration(targetDate.diff(now))
+
+               if (duration.asMilliseconds() <= 0) return;
+               element.querySelector(".untill__numeric--seconds").textContent = duration.seconds().toString().padStart(2, "0");
+               element.querySelector(".untill__numeric--minutes").textContent = duration.minutes().toString().padStart(2, "0");
+               element.querySelector(".untill__numeric--hours").textContent = duration.hours().toString().padStart(2, "0");
+               element.querySelector(".untill__numeric--days").textContent = duration.asDays().toFixed(0).toString().padStart(2 , "0");
+            }, 1250);
+         }
+         activateCountdown(document.getElementById("myCountdown"), 'targetDate')
+      } </script>
+
+
+</body>
+
+</html>

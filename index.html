@@ -40,7 +40,7 @@
    <meta property="og:image" content="#">
 
 
-   <title>பஞ்ச பட்சி ரத்தினம்</title>
+   <title>பஞ்ச பட்சி</title>
 
 
 </head>
@@ -66,6 +66,7 @@
          <div class="datetime">
             <div class="time"></div>
             <div id="சூரியஉதயம்"></div>
+            <div id="sunset"></div>
             <div class="date"></div>
          </div>
          
@@ -322,6 +323,9 @@
                   <img class="படுபட்சிimg" src="./img/patchicrow.png">
                   <h5>படு பட்சி</h5>
                </div>
+               <div class="அட்சரம்">
+                  <img width="66px" height="66px"  src="./atcharam/இ.svg" alt="charset">
+               </div>
             </div>
 
             <div class="இரவு boxed">
@@ -333,6 +337,9 @@
                <div class="படுபட்சி">
                   <img class="படுபட்சிimg" src="./img/patchicrow.png">
                   <h5>படு பட்சி</h5>
+               </div>
+               <div class="அட்சரம்">
+                  <img width="66px" height="66px"  src="./atcharam/எ.svg" alt="charset">
                </div>
             </div>
 
@@ -455,6 +462,9 @@
                   <img class="படுபட்சிimg" src="./img/patchiowl.png">
                   <h5>படு பட்சி</h5>
                </div>
+               <div class="அட்சரம்">
+                  <img width="66px" height="66px"  src="./atcharam/எ.svg" alt="charset">
+               </div>
             </div>
 
             <div class="இரவு boxed">
@@ -466,6 +476,9 @@
                <div class="படுபட்சி">
                   <img class="படுபட்சிimg" src="./img/patchiowl.png">
                   <h5>படு பட்சி</h5>
+               </div>
+               <div class="அட்சரம்">
+                  <img width="66px" height="66px"  src="./atcharam/அ.svg" alt="charset">
                </div>
             </div>
 
@@ -487,6 +500,9 @@
                   <img class="படுபட்சிimg" src="./img/patchivulture.png">
                   <h5>படு பட்சி</h5>
                </div>
+               <div class="அட்சரம்">
+                  <img width="66px" height="66px"  src="./atcharam/ஒ.svg" alt="charset">
+               </div>
             </div>
 
             <div class="இரவு boxed">
@@ -498,6 +514,9 @@
                <div class="படுபட்சி">
                   <img class="படுபட்சிimg" src="./img/patchivulture.png">
                   <h5>படு பட்சி</h5>
+               </div>
+               <div class="அட்சரம்">
+                  <img width="66px" height="66px"  src="./atcharam/இ.svg" alt="charset">
                </div>
             </div>
 
@@ -773,8 +792,11 @@
       navigator.geolocation.getCurrentPosition(showPosition);
       function showPosition(pos) {
          const date = (SunCalc.getTimes(today, pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy).sunrise);
+         const dateset = (SunCalc.getTimes(today, pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy).sunset);
          let srt = SunRiseTime(date);
+         let sst = SunSetTime(dateset);
          document.getElementById("சூரியஉதயம்").innerText = "Sunrise Time " + `${srt}`;
+         document.getElementById("sunset").innerText = "SunSet Time " + `${sst}`;
       }
 
       let mphase = SunCalc.getMoonIllumination(today).phase
@@ -788,7 +810,7 @@
          activeDiv.classList.add('active')
       }
      
-         console.log(SunCalc.getMoonTimes());
+         
       
 
    </script>
