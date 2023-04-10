@@ -34,6 +34,16 @@ body {
 	border-radius: 25px;
 	color: rgb(227, 199, 22);
 }
+#sunset {
+	text-align: center;
+	font-weight: 500;
+	font-size: 1em;
+	padding: 0.5vh;
+	border: 1px solid #000;
+	background: rgb(5, 48, 88);
+	border-radius: 25px;
+	color: rgb(227, 199, 22);
+}
 
 .சாமம்-தொழில் {
 	margin: 5px auto;

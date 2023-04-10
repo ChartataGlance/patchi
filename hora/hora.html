@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta http-equiv="refresh" content="72000">
+   <meta http-equiv="pragma" content="no-cache" />
+   <meta http-equiv="Clear-Site-Data" content="*" />
+
+   <meta name="viewport" content="width=device-width">
+   <META name="robots" content="index,follow">
+   <meta name="theme-color" content="#0D0D2C">
+   <META name="revisit-after" content="1 Days">
+
+   <meta name="description" content="பஞ்சபட்சி">
+   <META NAME="Keywords" CONTENT="தேய்பிறை & தேய்பிறை கிழமைகளில் அதிகார பட்சி & மற்றும் படுபட்சி">
+   <META NAME="author" content="chartataglance">
+   <META NAME="copyright" content="chartataglance">
+   <META NAME="language" content="en-us">
+   <META NAME="rating" content="General">
+   <meta name="next-head-count" content="1">
+
+   <!-- Google Tag Manager -->
+   <link rel="icon" type="image/png" href="../tvulture.webp">
+   <link rel="canonical" href="https://PanchaPatchi.com">
+
+
+   <meta property="og:site_name" content="பஞ்சபட்சி Time Table HORA">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://PanchaPatchi.com">
+   <meta property="og:description" content="தேய்பிறை & தேய்பிறை கிழமைகளில் அதிகார பட்சி & மற்றும் படுபட்சி">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:site" content="@chartataglance">
+   <meta name="twitter:creator" content="@chartataglance">
+
+
+   <meta property="og:title" content="பஞ்ச பட்சி">
+   <meta property="twitter:description" content="தேய்பிறை & தேய்பிறை கிழமைகளில் அதிகார பட்சி & மற்றும் படுபட்சி">
+   <meta property="og:image" content="#">
+
+
+   <title>பஞ்ச பட்சி hora</title>
+   <!-- <link rel="stylesheet" href="../css/அழகு.css"> -->
+   <script defer src="../index.js"></script>
+</head>
+<style>
+   body {
+      min-height: 100vh;
+      width: 100vw;
+      background-image: url(../img/mayilbackdrop.jfif);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+   }
+
+   main {
+      padding: 1%;
+
+   }
+
+   .timing {
+      text-align: center;
+      font-weight: 500;
+      font-size: 1em;
+      padding: 0.5vh;
+      border: 1px solid #000;
+      background: rgb(5, 48, 88);
+      border-radius: 25px;
+      color: rgb(241, 210, 7);
+   }
+
+   .rasibox {
+      min-height: 108px;
+      min-width: 108px;
+      color: #fff;
+      border: 1px solid #fff;
+      text-transform: capitalize;
+      font-size: x-large;
+   }
+
+   .hora {
+      background: #07043987;
+     
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      text-align: center;
+   }
+
+   .rasisun {
+   
+       background-image: url(Sun.svg);
+   }
+
+   .rasisat {
+      background-color: #11042f;
+   }
+
+   .rasimer {
+      background-color: rgba(0, 128, 0, 0.486);
+   }
+   .rasimoon{
+      background-color: #ffffff22;
+   }
+</style>
+
+<body>
+
+   <header>
+      <center>
+         <div>
+            <a style="text-decoration: none; " href="/">
+               <h1 class="headlineh1">பஞ்ச பட்சி</h1>
+            </a>
+         </div>
+         <div class="datetime">
+            <div class="time"></div>
+            <div class="date"></div>
+         </div>
+      </center>
+      <div class="timing">
+         <div id="சூரியஉதயம்"></div>
+         <div id="daytimehora"></div>
+      </div>
+   </header>
+   <main>
+
+
+
+
+
+      <div class="hora">
+
+         <div class=" daytext rasi1">sunday
+
+         </div>
+         <div class=" daytext rasi2">monday
+         </div>
+         <div class=" daytext rasi3">tuesday
+         </div>
+         <div class=" daytext rasi4">wednesday
+         </div>
+         <div class=" daytext rasi5">thursday
+         </div>
+         <div class=" daytext rasi6">friday
+         </div>
+         <div class=" daytext rasi7">saturday
+         </div>
+
+      </div>
+      <div class="hora">
+
+         <div class=" rasibox rasisun">sun <div id="st"></div>
+         </div>
+         <div class=" rasibox rasimoon">moon <div id="nd"></div>
+         </div>
+         <div class=" rasibox rasimars">mars <div id="rd"></div>
+         </div>
+         <div class=" rasibox rasimer">mercury <div id="th"></div>
+         </div>
+         <div class=" rasibox rasi5">jupiter <div id="ve"></div>
+         </div>
+         <div class=" rasibox rasi6">venus <div id="ix"></div>
+         </div>
+         <div class=" rasibox rasisat">saturn <div id="en"></div>
+         </div>
+
+      </div>
+      <div class="hora">
+
+         <div class=" rasibox rasi1">venus <div id="dh2"></div>
+         </div>
+         <div class=" rasibox rasisat">saturn <div id="mondh2"></div>
+         </div>
+         <div class=" rasibox rasisun">sun <div id="tudh2"></div>
+         </div>
+         <div class=" rasibox rasimoon">moon <div id="wedh2"></div>
+         </div>
+         <div class=" rasibox rasi5">mars <div id="thdh2"></div>
+         </div>
+         <div class=" rasibox rasimer">mercury <div id="frdh2"></div>
+         </div>
+         <div class=" rasibox rasi7">jupiter <div id="sadh2"></div>
+         </div>
+
+      </div>
+      <div class="hora">
+
+         <div class=" rasibox rasimer">mercury <div id="dh3"></div>
+         </div>
+         <div class=" rasibox rasi2">jupiter <div id="mondh3"></div>
+         </div>
+         <div class=" rasibox rasi3">venus <div id="tudh3"></div>
+         </div>
+         <div class=" rasibox rasisat">saturn <div id="wedh3"></div>
+         </div>
+         <div class=" rasibox rasisun">sun <div id="thdh3"></div>
+         </div>
+         <div class=" rasibox rasimoon">moon <div id="frdh3"></div>
+         </div>
+         <div class=" rasibox rasi7">mars <div id="sadh3"></div>
+         </div>
+
+      </div>
+      <div class="hora">
+
+         <div class=" rasibox rasimoon">moon <div id="dh4"></div>
+         </div>
+         <div class=" rasibox rasi2">mars <div id="mondh4"></div>
+         </div>
+         <div class=" rasibox rasimer">mercury <div id="tudh4"></div>
+         </div>
+         <div class=" rasibox rasi4">jupiter <div id="wedh4"></div>
+         </div>
+         <div class=" rasibox rasi5">venus <div id="thdh4"></div>
+         </div>
+         <div class=" rasibox rasisat">saturn <div id="frdh4"></div>
+         </div>
+         <div class=" rasibox rasisun">sun <div id="sadh4"></div>
+         </div>
+
+      </div>
+      <div class="hora">
+
+         <div class=" rasibox rasisat">saturn <div id="dh5"></div>
+         </div>
+         <div class=" rasibox rasisun">sun <div id="mondh5"></div>
+         </div>
+         <div class=" rasibox rasimoon">moon <div id="tudh5"></div>
+         </div>
+         <div class=" rasibox rasi4">mars <div id="wedh5"></div>
+         </div>
+         <div class=" rasibox rasimer">mercury <div id="thdh5"></div>
+         </div>
+         <div class=" rasibox rasi6">jupiter <div id="frdh5"></div>
+         </div>
+         <div class=" rasibox rasi7">venus <div id="sadh5"></div>
+         </div>
+
+      </div>
+      <div class="hora">
+
+         <div class=" rasibox rasi1">jupiter <div id="dh6"></div>
+         </div>
+         <div class=" rasibox rasi2">venus <div id="mondh6"></div>
+         </div>
+         <div class=" rasibox rasisat">saturn <div id="tudh6"></div>
+         </div>
+         <div class=" rasibox rasisun">sun <div id="wedh6"></div>
+         </div>
+         <div class=" rasibox rasimoon">moon <div id="thdh6"></div>
+         </div>
+         <div class=" rasibox rasi6">mars <div id="frdh6"></div>
+         </div>
+         <div class=" rasibox rasimer">mercury <div id="sadh6"></div>
+         </div>
+
+      </div>
+      <div class="hora">
+
+         <div class=" rasibox rasi1">mars <div id="dh7"></div>
+         </div>
+         <div class=" rasibox rasimer">mercury <div id="mondh7"></div>
+         </div>
+         <div class=" rasibox rasi3">jupiter <div id="tudh7"></div>
+         </div>
+         <div class=" rasibox rasi4">venus <div id="wedh7"></div>
+         </div>
+         <div class=" rasibox rasisat">saturn <div id="thdh7"></div>
+         </div>
+         <div class=" rasibox rasisun">sun <div id="frdh7"></div>
+         </div>
+         <div class=" rasibox rasimoon">moon <div id="sadh7"></div>
+         </div>
+
+      </div>
+
+
+
+      <div class="hora">
+
+         <div class=" rasibox rasisun">sun <div id="dh8"></div>
+         </div>
+         <div class=" rasibox rasimoon">moon <div id="mondh8"></div>
+         </div>
+         <div class=" rasibox rasi3">mars <div id="tudh8"></div>
+         </div>
+         <div class=" rasibox rasimer">mercury <div id="wedh8"></div>
+         </div>
+         <div class=" rasibox rasi5">jupiter <div id="thdh8"></div>
+         </div>
+         <div class=" rasibox rasi6">venus <div id="frdh8"></div>
+         </div>
+         <div class=" rasibox rasisat">saturn <div id="sadh8"></div>
+         </div>
+
+      </div>
+      <div class="hora">
+
+         <div class=" rasibox rasi1">venus <div id="dh9"></div>
+         </div>
+         <div class=" rasibox rasisat">saturn <div id="mondh9"></div>
+         </div>
+         <div class=" rasibox rasisun">sun <div id="tudh9"></div>
+         </div>
+         <div class=" rasibox rasimoon">moon <div id="wedh9"></div>
+         </div>
+         <div class=" rasibox rasi5">mars <div id="thdh9"></div>
+         </div>
+         <div class=" rasibox rasimer">mercury <div id="frdh9"></div>
+         </div>
+         <div class=" rasibox rasi7">jupiter <div id="sadh9"></div>
+         </div>
+
+      </div>
+      <div class="hora">
+
+         <div class=" rasibox rasimer">mercury <div id="dh10"></div>
+         </div>
+         <div class=" rasibox rasi2">jupiter <div id="mondh10"></div>
+         </div>
+         <div class=" rasibox rasi3">venus <div id="tudh10"></div>
+         </div>
+         <div class=" rasibox rasisat">saturn <div id="wedh10"></div>
+         </div>
+         <div class=" rasibox rasisun">sun <div id="thdh10"></div>
+         </div>
+         <div class=" rasibox rasimoon">moon <div id="frdh10"></div>
+         </div>
+         <div class=" rasibox rasi7">mars <div id="sadh10"></div>
+         </div>
+
+      </div>
+      <div class="hora">
+
+         <div class=" rasibox rasimoon">moon <div id="dh11"></div>
+         </div>
+         <div class=" rasibox rasi2">mars <div id="mondh11"></div>
+         </div>
+         <div class=" rasibox rasimer">mercury <div id="tudh11"></div>
+         </div>
+         <div class=" rasibox rasi4">jupiter <div id="wedh11"></div>
+         </div>
+         <div class=" rasibox rasi5">venus <div id="thdh11"></div>
+         </div>
+         <div class=" rasibox rasisat">saturn <div id="frdh11"></div>
+         </div>
+         <div class=" rasibox rasisun">sun <div id="sadh11"></div>
+         </div>
+
+      </div>
+      <div class="hora">
+
+         <div class=" rasibox rasisat">saturn <div id="dh12"></div>
+         </div>
+         <div class=" rasibox rasi2">sun <div id="mondh12"></div>
+         </div>
+         <div class=" rasibox rasimoon">moon <div id="tudh12"></div>
+         </div>
+         <div class=" rasibox rasi4">mars <div id="wedh12"></div>
+         </div>
+         <div class=" rasibox rasimer">mercury <div id="thdh12"></div>
+         </div>
+         <div class=" rasibox rasi6">jupiter <div id="frdh12"></div>
+         </div>
+         <div class=" rasibox rasi7">venus <div id="sadh12"></div>
+         </div>
+
+      </div>
+      <div class="timing" id="sunset"></div>
+
+
+
+   </main>
+
+
+
+
+   <footer>
+      <center><a style="color: rgb(2, 6, 26);" href="https://www.PanchaPatchi.com/contact.html">By Rama</a></center>
+      <a href="https://www.PanchaPatchi.com">
+         <center>
+            <p style="color: aliceblue; padding: 20px;  ">&copy; PanchaPatchi.com | All Rights Reserved</p>
+         </center>
+      </a>
+   </footer>
+
+
+   <script defer src="../sunCalc.js"></script>
+   <script>
+
+      const today = new Date();
+
+      navigator.geolocation.getCurrentPosition(showPosition);
+      function showPosition(pos) {
+         const date = (SunCalc.getTimes(today, pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy).sunrise);
+         const dateset = (SunCalc.getTimes(today, pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy).sunset);
+         let srt = SunRiseTime(date);
+         let sst = SunSetTime(dateset);
+         document.getElementById("சூரியஉதயம்").innerText = "Sunrise Time " + `${srt}`;
+         document.getElementById("sunset").innerText = "SunSet Time " + `${sst}`;
+         let daytime = (((convertTomin(sst) - convertTomin(srt)) / 12))
+         let nighttime = (1440 - (daytime * 12)) / 12
+
+         let dhora = daytime.toFixed(2).slice(0, 2)
+
+         let nhora = nighttime.toFixed(2).slice(0, 2)
+         let onehora = dhora
+         document.getElementById("daytimehora").innerText = "Daytime Hora " + `${dhora}` + " min";
+         // document.getElementById("nighttimehora").innerText = "nighttime Hora " + `${nhora}` + " min";
+
+         if (today.getDay() == 0) {
+            document.getElementById("st").innerText = "Untill " + `${convertToStamp(srt, (1 * onehora))}`;
+            document.getElementById("dh2").innerText = "Untill " + `${convertToStamp(srt, (2 * onehora))}`;
+            document.getElementById("dh3").innerText = "Untill " + `${convertToStamp(srt, (3 * onehora))}`;
+            document.getElementById("dh4").innerText = "Untill " + `${convertToStamp(srt, (4 * onehora))}`;
+            document.getElementById("dh5").innerText = "Untill " + `${convertToStamp(srt, (5 * onehora))}`;
+            document.getElementById("dh6").innerText = "Untill " + `${convertToStamp(srt, (6 * onehora))}`;
+            document.getElementById("dh7").innerText = "Untill " + `${convertToStamp(srt, (7 * onehora))}`;
+            document.getElementById("dh8").innerText = "Untill " + `${convertToStamp(srt, (8 * onehora))}`;
+            document.getElementById("dh9").innerText = "Untill " + `${convertToStamp(srt, (9 * onehora))}`;
+            document.getElementById("dh10").innerText = "Untill " + `${convertToStamp(srt, (10 * onehora))}`;
+            document.getElementById("dh11").innerText = "Untill " + `${convertToStamp(srt, (11 * onehora))}`;
+            document.getElementById("dh12").innerText = "Untill " + `${convertToStamp(srt, (12 * onehora))}`;
+         }
+         if (today.getDay() == 1) {
+            document.getElementById("nd").innerText = "Untill " + `${convertToStamp(srt, (1 * onehora))}`;
+            document.getElementById("mondh2").innerText = "Untill " + `${convertToStamp(srt, (2 * onehora))}`;
+            document.getElementById("mondh3").innerText = "Untill " + `${convertToStamp(srt, (3 * onehora))}`;
+            document.getElementById("mondh4").innerText = "Untill " + `${convertToStamp(srt, (4 * onehora))}`;
+            document.getElementById("mondh5").innerText = "Untill " + `${convertToStamp(srt, (5 * onehora))}`;
+            document.getElementById("mondh6").innerText = "Untill " + `${convertToStamp(srt, (6 * onehora))}`;
+            document.getElementById("mondh7").innerText = "Untill " + `${convertToStamp(srt, (7 * onehora))}`;
+            document.getElementById("mondh8").innerText = "Untill " + `${convertToStamp(srt, (8 * onehora))}`;
+            document.getElementById("mondh9").innerText = "Untill " + `${convertToStamp(srt, (9 * onehora))}`;
+            document.getElementById("mondh10").innerText = "Untill " + `${convertToStamp(srt, (10 * onehora))}`;
+            document.getElementById("mondh11").innerText = "Untill " + `${convertToStamp(srt, (11 * onehora))}`;
+            document.getElementById("mondh12").innerText = "Untill " + `${convertToStamp(srt, (12 * onehora))}`;
+
+         }
+         if (today.getDay() == 2) {
+            document.getElementById("rd").innerText = "Untill " + `${convertToStamp(srt, (1 * onehora))}`;
+            document.getElementById("tudh2").innerText = "Untill " + `${convertToStamp(srt, (2 * onehora))}`;
+            document.getElementById("tudh3").innerText = "Untill " + `${convertToStamp(srt, (3 * onehora))}`;
+            document.getElementById("tudh4").innerText = "Untill " + `${convertToStamp(srt, (4 * onehora))}`;
+            document.getElementById("tudh5").innerText = "Untill " + `${convertToStamp(srt, (5 * onehora))}`;
+            document.getElementById("tudh6").innerText = "Untill " + `${convertToStamp(srt, (6 * onehora))}`;
+            document.getElementById("tudh7").innerText = "Untill " + `${convertToStamp(srt, (7 * onehora))}`;
+            document.getElementById("tudh8").innerText = "Untill " + `${convertToStamp(srt, (8 * onehora))}`;
+            document.getElementById("tudh9").innerText = "Untill " + `${convertToStamp(srt, (9 * onehora))}`;
+            document.getElementById("tudh10").innerText = "Untill " + `${convertToStamp(srt, (10 * onehora))}`;
+            document.getElementById("tudh11").innerText = "Untill " + `${convertToStamp(srt, (11 * onehora))}`;
+            document.getElementById("tudh12").innerText = "Untill " + `${convertToStamp(srt, (12 * onehora))}`;
+         }
+         if (today.getDay() == 3) {
+            document.getElementById("th").innerText = "Untill " + `${convertToStamp(srt, (1 * onehora))}`;
+            document.getElementById("wedh2").innerText = "Untill " + `${convertToStamp(srt, (2 * onehora))}`;
+            document.getElementById("wedh3").innerText = "Untill " + `${convertToStamp(srt, (3 * onehora))}`;
+            document.getElementById("wedh4").innerText = "Untill " + `${convertToStamp(srt, (4 * onehora))}`;
+            document.getElementById("wedh5").innerText = "Untill " + `${convertToStamp(srt, (5 * onehora))}`;
+            document.getElementById("wedh6").innerText = "Untill " + `${convertToStamp(srt, (6 * onehora))}`;
+            document.getElementById("wedh7").innerText = "Untill " + `${convertToStamp(srt, (7 * onehora))}`;
+            document.getElementById("wedh8").innerText = "Untill " + `${convertToStamp(srt, (8 * onehora))}`;
+            document.getElementById("wedh9").innerText = "Untill " + `${convertToStamp(srt, (9 * onehora))}`;
+            document.getElementById("wedh10").innerText = "Untill " + `${convertToStamp(srt, (10 * onehora))}`;
+            document.getElementById("wedh11").innerText = "Untill " + `${convertToStamp(srt, (11 * onehora))}`;
+            document.getElementById("wedh12").innerText = "Untill " + `${convertToStamp(srt, (12 * onehora))}`;
+         }
+         if (today.getDay() == 4) {
+            document.getElementById("ve").innerText = "Untill " + `${convertToStamp(srt, (1 * onehora))}`;
+            document.getElementById("thdh2").innerText = "Untill " + `${convertToStamp(srt, (2 * onehora))}`;
+            document.getElementById("thdh3").innerText = "Untill " + `${convertToStamp(srt, (3 * onehora))}`;
+            document.getElementById("thdh4").innerText = "Untill " + `${convertToStamp(srt, (4 * onehora))}`;
+            document.getElementById("thdh5").innerText = "Untill " + `${convertToStamp(srt, (5 * onehora))}`;
+            document.getElementById("thdh6").innerText = "Untill " + `${convertToStamp(srt, (6 * onehora))}`;
+            document.getElementById("thdh7").innerText = "Untill " + `${convertToStamp(srt, (7 * onehora))}`;
+            document.getElementById("thdh8").innerText = "Untill " + `${convertToStamp(srt, (8 * onehora))}`;
+            document.getElementById("thdh9").innerText = "Untill " + `${convertToStamp(srt, (9 * onehora))}`;
+            document.getElementById("thdh10").innerText = "Untill " + `${convertToStamp(srt, (10 * onehora))}`;
+            document.getElementById("thdh11").innerText = "Untill " + `${convertToStamp(srt, (11 * onehora))}`;
+            document.getElementById("thdh12").innerText = "Untill " + `${convertToStamp(srt, (12 * onehora))}`;
+         }
+         if (today.getDay() == 5) {
+            document.getElementById("ix").innerText = "Untill " + `${convertToStamp(srt, 1 * onehora)}`;
+            document.getElementById("frdh2").innerText = "Untill " + `${convertToStamp(srt, (2 * onehora))}`;
+            document.getElementById("frdh3").innerText = "Untill " + `${convertToStamp(srt, (3 * onehora))}`;
+            document.getElementById("frdh4").innerText = "Untill " + `${convertToStamp(srt, (4 * onehora))}`;
+            document.getElementById("frdh5").innerText = "Untill " + `${convertToStamp(srt, (5 * onehora))}`;
+            document.getElementById("frdh6").innerText = "Untill " + `${convertToStamp(srt, (6 * onehora))}`;
+            document.getElementById("frdh7").innerText = "Untill " + `${convertToStamp(srt, (7 * onehora))}`;
+            document.getElementById("frdh8").innerText = "Untill " + `${convertToStamp(srt, (8 * onehora))}`;
+            document.getElementById("frdh9").innerText = "Untill " + `${convertToStamp(srt, (9 * onehora))}`;
+            document.getElementById("frdh10").innerText = "Untill " + `${convertToStamp(srt, (10 * onehora))}`;
+            document.getElementById("frdh11").innerText = "Untill " + `${convertToStamp(srt, (11 * onehora))}`;
+            document.getElementById("frdh12").innerText = "Untill " + `${convertToStamp(srt, (12 * onehora))}`;
+         }
+         if (today.getDay() == 6) {
+            document.getElementById("en").innerText = "Untill " + `${convertToStamp(srt, 1 * onehora)}`;
+            document.getElementById("sadh2").innerText = "Untill " + `${convertToStamp(srt, (2 * onehora))}`;
+            document.getElementById("sadh3").innerText = "Untill " + `${convertToStamp(srt, (3 * onehora))}`;
+            document.getElementById("sadh4").innerText = "Untill " + `${convertToStamp(srt, (4 * onehora))}`;
+            document.getElementById("sadh5").innerText = "Untill " + `${convertToStamp(srt, (5 * onehora))}`;
+            document.getElementById("sadh6").innerText = "Untill " + `${convertToStamp(srt, (6 * onehora))}`;
+            document.getElementById("sadh7").innerText = "Untill " + `${convertToStamp(srt, (7 * onehora))}`;
+            document.getElementById("sadh8").innerText = "Untill " + `${convertToStamp(srt, (8 * onehora))}`;
+            document.getElementById("sadh9").innerText = "Untill " + `${convertToStamp(srt, (9 * onehora))}`;
+            document.getElementById("sadh10").innerText = "Untill " + `${convertToStamp(srt, (10 * onehora))}`;
+            document.getElementById("sadh11").innerText = "Untill " + `${convertToStamp(srt, (11 * onehora))}`;
+            document.getElementById("sadh12").innerText = "Untill " + `${convertToStamp(srt, (12 * onehora))}`;
+         }
+
+
+
+      }
+
+
+
+      function convertTomin(srmin) {
+         let split = srmin.split(":");
+         var splith = split[0] * 60 * 60;
+         var splitm = split[1] * 60;
+         var seconds = split[2];
+         return total = (splith + splitm) / 60;
+      }
+
+      function convertToStamp(srmin, addmin) {
+         let split = srmin.split(":");
+         var splith = split[0] * 60 * 60;
+         var splitm = split[1] * 60;
+         var seconds = split[2];
+
+
+         total = addmin + (splith + splitm) / 60;
+
+         var calchours = Math.floor(total / 60) % 24 || 24;
+         var calcminutes = total % 60;
+         var hours = calchours.toString().padStart(2, "0");
+         var minutes = calcminutes.toString().padStart(2, "0");
+         return `${hours}:${minutes}:${seconds}`;
+      }
+
+
+   </script>
+
+</body>
+
+</html>
