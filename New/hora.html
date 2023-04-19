@@ -63,7 +63,7 @@
    .hora {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      
+
    }
 
    .rasibox {
@@ -75,10 +75,7 @@
       text-transform: capitalize;
       font-size: large;
       text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
+
    }
 
    .samam {
@@ -86,13 +83,12 @@
       background-color: #5ff;
 
    }
-   .head{
+
+   .head {
       background-color: rgb(12, 80, 80);
       box-shadow: inset 0px 0px 0px 22px #d80d0d;
       text-align: center;
    }
-
-
 </style>
 
 <body>
@@ -106,20 +102,31 @@
          <div class="rasibox"><a style="text-decoration: none; color: #5ff; " href="/">
                <h1>Pancha <br> Patchi</h1>
             </a></div>
-         <div class="rasibox"><div class="date"></div></div>
-         <div class="rasibox"><div class="time"></div></div>
+         <div class="rasibox">
+            <div class="date"></div>
+         </div>
+         <div class="rasibox">
+            <div class="time"></div>
+         </div>
 
       </div>
 
+      <div class="rasibox">
+         <div id="daymin"></div>
+         <div id="iravu"></div>
 
+         <div id="samam"></div>
+         <div id="naligai"></div>
+         <div id="naligaihalf"></div>
+      </div>
       <div class="hora">
-         <div class="rasibox "><div id="சூரியஉதயம்"></div></div>
-         <div class="rasibox "></div>
          <div class="rasibox ">
-            
+            <div id="சூரியஉதயம்"></div>
          </div>
          <div class="rasibox "></div>
          <div class="rasibox "></div>
+         <div class="rasibox "></div>
+         <div class="rasibox "></div>
 
       </div>
 
@@ -166,18 +173,18 @@
          <div class="rasibox "></div>
          <div class="rasibox "></div>
          <div class="rasibox ">
-            
+
          </div>
          <div class="rasibox "></div>
-         <div class="rasibox "><div id="சூரியஅஸ்தமனம்"></div></div>
+         <div class="rasibox ">
+            <div id="சூரியஅஸ்தமனம்"></div>
+         </div>
       </div>
 
 
 
 
    </main>
-
-
 
 
 
@@ -192,24 +199,35 @@
          const sstd = (SunCalc.getTimes(today, pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy).sunset);
          let srt = SunRiseTime(srtd);
          let sst = SunSetTime(sstd);
+         
+         if (today == Date.now(168189245)){
+            console.log("same");
+         } else { console.log("not");}
+
+         
+
          document.getElementById("சூரியஉதயம்").innerText = "Sunrise Time " + `${srt}`;
          document.getElementById("சூரியஅஸ்தமனம்").innerText = "SunSet Time " + `${sst}`;
-         let daytime = (((convertTomin(sst) - convertTomin(srt)) / 12))
-         let nighttime = (1440 - (daytime * 12)) / 12
 
-         let dhora = daytime.toFixed(2).slice(0, 2)
+         let daymin = ((convertTomin(sst) - convertTomin(srt)))
+         let samam = (daymin / 5).toFixed(0)
+         let iravu = 1440 - daymin
+         let naligai = (samam / 6).toFixed(0)
+         let half = (naligai / 2).toFixed(0)
+         document.getElementById("daymin").innerText = "DayMin " + `${convertTime(daymin)}`;
+         document.getElementById("iravu").innerText = "nightMin " + `${convertTime(iravu)}`;
+         document.getElementById("samam").innerText = "samam " + `${convertTime(samam)}`;
+         document.getElementById("naligai").innerText = "naligai " + `${naligai}`;
+         document.getElementById("naligaihalf").innerText = "half " + `${half}`;
 
-         let nhora = nighttime.toFixed(2).slice(0, 2)
-         let onehora = dhora
-
-
-
+         
 
 
 
 
       }
-
+      let t = convertTime(100)
+      console.log(t);
 
 
       function convertTomin(srmin) {
@@ -235,6 +253,32 @@
          var minutes = calcminutes.toString().padStart(2, "0");
          return `${hours}:${minutes}:${seconds}`;
       }
+
+      function convertTime(min) {
+         var calchours = Math.floor(min / 60) % 24 || 24;
+         var calcminutes = min % 60;
+         var hours = calchours.toString().padStart(2, "0");
+         var minutes = calcminutes.toString().padStart(2, "0");
+         return `${hours}:${minutes}`;
+      }
+
+      function isEven(n) {
+         n = Number(n);
+         return n === 0 || !!(n && !(n % 2));
+      }
+
+      function isOdd(n) {
+         return isEven(Number(n) + 1);
+      }
+      let dat = new Date()
+      const unixTimestamp = Date.now(dat)
+      console.log(dat);
+      console.log(unixTimestamp); 
+
+      const timestamp = 1621365367; // Unix timestamp in seconds
+      const date = new Date(timestamp * 1000); // Convert timestamp to milliseconds and create a new date instance
+      const hours = date.getHours(); // Extract the hour component
+
 
 
    </script>
