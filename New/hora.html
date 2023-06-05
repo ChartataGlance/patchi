@@ -118,6 +118,7 @@
          <div id="samam"></div>
          <div id="naligai"></div>
          <div id="naligaihalf"></div>
+         <div id="naligaiqtr"></div>
       </div>
       <div class="hora">
          <div class="rasibox ">
@@ -214,11 +215,13 @@
          let iravu = 1440 - daymin
          let naligai = (samam / 6).toFixed(0)
          let half = (naligai / 2).toFixed(0)
+         let qtr = (naligai / 4).toFixed(0)
          document.getElementById("daymin").innerText = "DayMin " + `${convertTime(daymin)}`;
          document.getElementById("iravu").innerText = "nightMin " + `${convertTime(iravu)}`;
          document.getElementById("samam").innerText = "samam " + `${convertTime(samam)}`;
          document.getElementById("naligai").innerText = "naligai " + `${naligai}`;
          document.getElementById("naligaihalf").innerText = "half " + `${half}`;
+         document.getElementById("naligaiqtr").innerText = "qtr " + `${qtr}`;
 
          
 
