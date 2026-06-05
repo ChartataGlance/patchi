@@ -1,834 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="ta">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta http-equiv="refresh" content="72000">
-   <meta http-equiv="pragma" content="no-cache" />
-   <meta http-equiv="Clear-Site-Data" content="*" />
-
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <META name="robots" content="index,follow">
-   <meta name="theme-color" content="#0D0D2C">
-   <META name="revisit-after" content="1 Days">
-
-   <meta name="description" content="பஞ்சபட்சி">
-   <META NAME="Keywords" CONTENT="பஞ்ச பட்சி ரத்தினம்  அதிகார பட்சி & மற்றும் படுபட்சி">
-   <META NAME="author" content="chartataglance">
-   <META NAME="copyright" content="chartataglance">
-   <META NAME="language" content="en-us">
-   <META NAME="rating" content="General">
-   <meta name="next-head-count" content="1">
-
-   <!-- Google Tag Manager -->
-   <link rel="icon" type="image/png" href="../tvulture.webp">
-   <link rel="canonical" href="https://PanchaPatchi.com">
-
-
-   <meta property="og:site_name" content="பஞ்சபட்சி">
-   <meta property="og:type" content="website">
-   <meta property="og:url" content="https://PanchaPatchi.com">
-   <meta property="og:description" content="தேய்பிறை & தேய்பிறை கிழமைகளில் அதிகார பட்சி & மற்றும் படுபட்சி">
-   <meta name="twitter:card" content="summary_large_image">
-   <meta name="twitter:site" content="@chartataglance">
-   <meta name="twitter:creator" content="@chartataglance">
-
-
-   <meta property="og:title" content="பஞ்ச பட்சி">
-   <meta property="twitter:description" content="தேய்பிறை & தேய்பிறை கிழமைகளில் அதிகார பட்சி & மற்றும் படுபட்சி">
-   <meta property="og:image" content="#">
-
-
-   <title>பஞ்ச பட்சி</title>
-
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Panchapatchi Tree App</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-   <header>
-      <center>
-         <div class="headerimgs">
-            <img width="60" src="../img/patchicrow.png">
-            <img width="60" src="../img/patchiowl.png">
-            <img width="90" src="../img/patchipeacock.png">
-            <img width="60" src="../img/patchichicken.png">
-            <img width="60" src="../img/patchivulture.png">
-         </div>
-      </center>
-      <center>
-
-         <div><a style="text-decoration: none; " href="/">
-               <h1 class="headlineh1">பஞ்ச பட்சி</h1>
-            </a>
-         </div>
-         <script defer src="../index.js"></script>
-         <div class="datetime">
-            <div class="time"></div>
-            <div id="சூரியஉதயம்"></div>
-            <div id="sunset"></div>
-            <div class="date"></div>
-         </div>
-
-      </center>
-   </header>
-   <style>
-      @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&display=swap");
-
-      * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-
-      }
-
-      :root {
-         --onew: 66.6vh;
-         --oned: calc(var(--onew)/6);
-         --with: 100vw;
-      }
-
-      body {
-         margin: 0 auto;
-         min-width: 333px;
-         background-color: rgb(12, 5, 41);
-         background-image: url(../img/mayilbackdrop.jfif);
-         background-repeat: no-repeat;
-         background-size: cover;
-         font-family: "Hind Madurai", sans-serif;
-      }
-
-      .oneweek {
-         min-height: var(--onew);
-         margin: 0 auto;
-         background: rgba(12, 61, 90, 0.5);
-         display: flex;
-         justify-content: center;
-
-      }
-
-      .oneval {
-         margin: 3vh 0.5vh;
-         /* border: 1px solid #fff; */
-         height: var(--oned);
-         width: var(--with);
-         max-width: 333px;
-         min-height: 433px;
-         border-radius: 1vh;
-         background: rgba(17, 9, 92, 0.818);
-         box-shadow: 1px 1px 6px rgba(22, 31, 2, 0.558), -1px -1px 1px rgb(41, 38, 38);
-         position: relative;
-
-      }
-
-
-      .boxed {
-
-
-         position: relative;
-         border-radius: 10px;
-         box-shadow: inset 27px 27px 20px -15px rgba(237, 235, 235, 0.2),
-            inset -21px -27px 20px -15px rgba(233, 229, 229, 0.2);
-      }
-
-
-      .பகல் {
-         width: 100%;
-         height: 180px;
-
-         border-radius: 1vh;
-         color: aliceblue;
-         position: relative;
-      }
-
-      .இரவு {
-         width: 100%;
-         min-height: 180px;
-
-         border-radius: 1vh;
-         color: aliceblue;
-         position: relative;
-
-      }
-
-      .அட்சரம் {
-         position: absolute;
-         transform: translate(160%, 0%);
-         height: 66px;
-         width: 66px;
-      }
-
-
-      .viewmorebtn {
-
-     
-         color: #c5df1c;
-         transition: all 0.5s;
-         width: 60%;
-         position: absolute;
-         top: 80%;
-         left: 43%;
-         opacity: 1;
-
-      }
-
-    
-
-      .oneweekbtn {
-         color: #c5df1c;
-         font-size: 1.5rem;
-         background: rgba(17, 9, 92, 0.818);
-         box-shadow: 1px 1px 6px rgba(22, 31, 2, 0.558), -1px -1px 1px rgb(41, 38, 38);
-
-
-      }
-
-      .பகல்img {
-         position: absolute;
-         right: 10%;
-         top: 0%;
-         height: 133px;
-
-      }
-
-      .இரவுimg {
-         position: absolute;
-         right: 10%;
-         top: 0%;
-         height: 133px;
-
-      }
-
-      .பகல்header {
-         text-align: center;
-         position: absolute;
-         left: 13.3%;
-         top: 13.3%;
-
-
-      }
-
-      .பகல்info {
-         position: absolute;
-         left: 35%;
-         bottom: 40%;
-
-
-      }
-
-      .weekday {
-         color: aliceblue;
-         text-align: center;
-         padding: 1em;
-      }
-
-      .படுபட்சி {
-         opacity: 0.33;
-         border-radius: 10px;
-         color: antiquewhite;
-         text-align: center;
-         padding: 10px;
-         position: absolute;
-         transform: translate(-50%, -50%);
-         left: 14.6%;
-         bottom: -25%;
-
-         box-shadow: 0.1px 0.1px 1px #c5df1c;
-         /* border: 1px solid #fff; */
-         /* border-radius: 50%; */
-      }
-
-      .படுபட்சிimg {
-         height: 66px;
-      }
-
-      .படுபட்சி:hover {
-         opacity: 1;
-         box-shadow: 0.7px 0.7px 1.5px #c5df1c;
-         background: rgba(9, 93, 211, 0.105);
-      }
-
-      .valar {
-         display: none;
-      }
-
-      .thei {
-         display: none;
-      }
-
-      .active {
-         display: block;
-      }
-   </style>
-
-
-   <article class="oneweek">
-
-
-      <section class="வளர்பிறை">
-
-         <div class="oneval valar ஞாயிறு ">
-
-            <div class="weekday">
-               <h6>வளர் பிரை</h6>
-               <h3>ஞாயிறு</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchivulture.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchiowl.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-               <div class="அட்சரம்">
-                  <img width="66px" height="66px" src="./atcharam/அ.svg" alt="charset">
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchicrow.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in" >View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchiowl.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-               <div class="அட்சரம்">
-                  <img width="66px" height="66px" src="./atcharam/உ.svg" alt="charset">
-               </div>
-            </div>
-
-         </div>
-         <!--  -->
-         <div class="oneval valar திங்கள்">
-
-
-            <div class="weekday">
-               <h6>வளர் பிறை</h6>
-               <h3>திங்கள்</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchiowl.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchicrow.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-               <div class="அட்சரம்">
-                  <img width="66px" height="66px" src="./atcharam/இ.svg" alt="charset">
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchichicken.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchicrow.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-               <div class="அட்சரம்">
-                  <img width="66px" height="66px" src="./atcharam/எ.svg" alt="charset">
-               </div>
-            </div>
-
-
-
-         </div>
-         <!--  -->
-         <div class="oneval valar செவ்வாய்">
-            <div class="weekday">
-               <h6>வளர் பிறை</h6>
-               <h3>செவ்வாய்</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchivulture.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchichicken.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchicrow.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchichicken.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-
-         </div>
-         <!--  -->
-         <div class="oneval valar புதன்">
-            <div class="weekday">
-               <h6>வளர் பிறை</h6>
-               <h3>புதன்</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchiowl.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchipeacock.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-               <div class="அட்சரம்">
-                  <img width="66px" height="66px" src="./atcharam/இ.svg" alt="charset">
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchichicken.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchipeacock.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-               <div class="அட்சரம்">
-                  <img width="66px" height="66px" src="./atcharam/எ.svg" alt="charset">
-               </div>
-            </div>
-
-
-         </div>
-         <!--  -->
-         <div class="oneval valar வியாழன்">
-            <div class="weekday">
-               <h6>வளர் பிறை</h6>
-               <h3>வியாழன்</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchicrow.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchivulture.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchipeacock.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchivulture.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-         </div>
-         <!--  -->
-         <div class="oneval valar வெள்ளி">
-            <div class="weekday">
-               <h6>வளர் பிறை</h6>
-               <h3>வெள்ளி</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchichicken.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchiowl.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-               <div class="அட்சரம்">
-                  <img width="66px" height="66px" src="./atcharam/எ.svg" alt="charset">
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchivulture.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchiowl.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-               <div class="அட்சரம்">
-                  <img width="66px" height="66px" src="./atcharam/அ.svg" alt="charset">
-               </div>
-            </div>
-
-
-         </div>
-         <!--  -->
-         <div class="oneval valar சனி">
-            <div class="weekday">
-               <h6>வளர் பிறை</h6>
-               <h3>சனி</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchipeacock.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchivulture.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-               <div class="அட்சரம்">
-                  <img width="66px" height="66px" src="./atcharam/ஒ.svg" alt="charset">
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchiowl.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in/">View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchivulture.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-               <div class="அட்சரம்">
-                  <img width="66px" height="66px" src="./atcharam/இ.svg" alt="charset">
-               </div>
-            </div>
-
-
-         </div>
-
-
-      </section>
-
-
-      <section class="தேய்பிறை">
-         <!--  -->
-         <div class="oneval thei ஞாயிறு">
-            <div class="weekday">
-               <h6>தேய் பிறை</h6>
-               <h3>ஞாயிறு</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchichicken.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in/">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchicrow.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchivulture.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in/">View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchicrow.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-         </div>
-         <!--  -->
-         <div class="oneval thei திங்கள்">
-            <div class="weekday">
-               <h6>தேய் பிறை</h6>
-               <h3>திங்கள்</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchipeacock.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in/">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchiowl.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchichicken.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in/">View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchiowl.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-         </div>
-         <!--  -->
-         <div class="oneval thei செவ்வாய்">
-            <div class="weekday">
-               <h6>தேய் பிறை</h6>
-               <h3>செவ்வாய்</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchichicken.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchivulture.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchivulture.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in/ ">View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchivulture.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-         </div>
-         <!--  -->
-         <div class="oneval thei புதன்">
-            <div class="weekday">
-               <h6>தேய் பிறை</h6>
-               <h3>புதன்</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchicrow.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in/">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchipeacock.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchiowl.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in/ ">View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchipeacock.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-         </div>
-         <!--  -->
-         <div class="oneval thei வியாழன் ">
-            <div class="weekday">
-               <h6>தேய் பிறை</h6>
-               <h3>வியாழன்</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchiowl.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in/">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchichicken.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-               <div class="அட்சரம்">
-                  <img width="66px" height="66px" src="./atcharam/உ.svg" alt="charset">
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchicrow.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in/">View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchichicken.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-               <div class="அட்சரம்">
-                  <img width="66px" height="66px" src="./atcharam/ஒ.svg" alt="charset">
-               </div>
-            </div>
-
-         </div>
-         <!--  -->
-         <div class="oneval thei வெள்ளி">
-            <div class="weekday">
-               <h6>தேய் பிறை</h6>
-               <h3>வெள்ளி</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchivulture.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchipeacock.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchipeacock.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in">View More</a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchipeacock.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-         </div>
-         <!--  -->
-         <div class="oneval thei சனி">
-            <div class="weekday">
-               <h6>தேய் பிறை</h6>
-               <h3>சனி</h3>
-            </div>
-
-            <div class="பகல் boxed ">
-               <h2 class="பகல்header">பகல்</h2>
-               <img class="பகல்img" src="./img/patchipeacock.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in" >View More</a>
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchichicken.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-            <div class="இரவு boxed">
-               <h2 class="பகல்header">இரவு</h2>
-               <img class="இரவுimg" src="./img/patchichicken.png">
-               <h5 class="பகல்info">அதிகார பட்சி</h5>
-               <a class="viewmorebtn" href="https://panchapatchi.in" > View More </a>
-
-               <div class="படுபட்சி">
-                  <img class="படுபட்சிimg" src="./img/patchichicken.png">
-                  <h5>படு பட்சி</h5>
-               </div>
-            </div>
-
-         </div>
-
-      </section>
-
-
-   </article>
-
-   <center>
-      <a class="oneweekbtn" href="./oneweek.html">Full Week Time Table</a>
-      <a href="./oldindex.html">
-         <h5>Old homepage</h5>
-      </a>
-      <a href="./பஞ்சபட்சி.html">
-         <h3>பஞ்ச பட்சி சாஸ்திரம் BASIC</h3>
-      </a>
-      <a href="./சத்துருமித்துரு.html">
-         <h3>சத்துரு & மித்துரு பட்சி</h3>
-      </a>
-      <a href="./பஞ்சபூதங்கள்.html">
-         <h3>பஞ்சபூதங்கள்</h3>
-      </a>
-      <a href="./moonposition.html">
-         <h6>Moonposition</h6>
-      </a>
-      <a href="./தமிழும்ஜாதகமும்.html">
-         <h2>தமிழும் ஜாதகமும்</h2>
-      </a>
-      <a href="./சாமம்/சாமம்.html">
-         <h2>பகல் சாமம்</h2>
-      </a>
-      <a href="./hora/hora.html">
-         <h2>Hora Day</h2>
-      </a>
-      <a href="./New/hora.html">
-         <h6>layout</h6>
-      </a>
-
-   </center>
-
-   <footer>
-      <center><a style="color: rgb(204, 207, 222);" href="https://www.PanchaPatchi.com/about.html">about</a>
-         <center><a style="color: rgb(204, 207, 222);" href="https://www.PanchaPatchi.com/contact.html">By Rama</a>
-         </center>
-         <a href="https://www.PanchaPatchi.com">
-            <center>
-               <p style="color: aliceblue; padding: 20px;  ">&copy; PanchaPatchi.com | All Rights Reserved</p>
-            </center>
-         </a>
-         <a href="https://www.PanchaPatchi.in">Visit         
-         </a>
-   </footer>
-
-   <script src="./sunCalc.js"></script>
-
-   <script>
-
-      const today = new Date();
-      navigator.geolocation.getCurrentPosition(showPosition);
-      function showPosition(pos) {
-         const date = (SunCalc.getTimes(today, pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy).sunrise);
-         const dateset = (SunCalc.getTimes(today, pos.coords.latitude, pos.coords.longitude, pos.coords.accuracy).sunset);
-         let srt = SunRiseTime(date);
-         let sst = SunSetTime(dateset);
-         document.getElementById("சூரியஉதயம்").innerText = "Sunrise Time " + `${srt}`;
-         document.getElementById("sunset").innerText = "SunSet Time " + `${sst}`;
-      }
-
-      let mphase = SunCalc.getMoonIllumination(today).phase
-      if (mphase > 0.50) {
-         தேய்பிறை = document.getElementsByClassName('தேய்பிறை')
-         let activeDiv = தேய்பிறை[0].children[today.getDay()]
-         activeDiv.classList.add('active')
-      } else {
-         வளர்பிறை = document.getElementsByClassName('வளர்பிறை')
-         let activeDiv = வளர்பிறை[0].children[today.getDay()]
-         activeDiv.classList.add('active')
-      }
-
-   </script>
-
+<div id="geoModal" class="modal">
+  <div class="modal-card">
+    <div style="font-size:46px">📍</div>
+    <h2>Allow location for accurate Panchapatchi timing</h2>
+    <p>This app uses your location to calculate local sunrise. Then it uses a fixed <b>12 hour day</b> and <b>12 hour night</b> cycle.</p>
+    <button class="primary" id="allowBtn" type="button">Use My Location</button>
+    <button id="skipBtn" type="button">View Tree First</button>
+    <button id="closePopupBtn" type="button" style="float:right;margin-top:8px">Close Popup</button>
+    <div id="geoError" class="err"></div>
+    <p class="notice">Location is used only in your browser. It is not stored or sent anywhere.</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="top">
+    <div>
+      <h1>பஞ்ச பட்சி · Panchapatchi Tree App</h1>
+      <p class="lead">Current bird, live countdown, inner 5-part activity, Adhikara/Padupatchi, and full phase tree. Local-folder ready: no fetch needed.</p>
+    </div>
+    <div class="status"><b id="geoStatus">Location not enabled</b><span id="geoDetails">Tap “Use My Location” for accurate timing.</span></div>
+  </div>
+
+  <section class="current" id="currentBox">
+    <div class="current-grid">
+      <div class="current-icon" id="currentIcon">🕊️</div>
+      <div>
+        <div class="current-title" id="currentTitle">Waiting for accurate timing</div>
+        <div class="current-path" id="currentPath">Enable location to see current bird, activity and countdown.</div>
+        <div class="big-count" id="countdownText">--:--:--</div>
+      </div>
+    </div>
+    <div class="progress"><div class="bar" id="activityBar"></div></div>
+    <div class="micro-grid" id="microGrid">
+      <div class="micro">1<small>--</small></div><div class="micro">2<small>--</small></div><div class="micro">3<small>--</small></div><div class="micro">4<small>--</small></div><div class="micro">5<small>--</small></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>Sunrise</b><span id="sunriseText">--</span></div>
+      <div class="stat"><b>Moon</b><span id="moonText">--</span></div>
+      <div class="stat"><b>Period</b><span id="periodText">--</span></div>
+      <div class="stat"><b>Inner Part</b><span id="innerText">--</span></div>
+    </div>
+    <div class="controls">
+      <button class="primary" id="locateBtn">Use My Location</button>
+      <a class="btn" href="#phaseWeek">Rising/Waning Week Cards</a>
+      <a class="btn" href="#phaseTree">Day/Night Tree</a>
+      <a class="btn" href="#activeTree">Active Tree</a>
+    </div>
+  </section>
+
+
+  <section id="phaseWeek">
+    <div class="section-head" style="border:1px solid var(--line);border-radius:22px;margin-top:18px">
+      <h2>Start Here: Rising Moon 7 Days / Waning Moon 7 Days</h2>
+      <span class="badge">Adhikara + Padu on every weekday card</span>
+    </div>
+    <div id="phaseWeekRoot"></div>
+  </section>
+
+  <section id="phaseTree">
+    <div class="section-head" style="border:1px solid var(--line);border-radius:22px;margin-top:18px">
+      <h2>Phase → Weekday → Day/Night → Samam Tree</h2>
+      <span class="badge">Each Samam contains 5 activity cards</span>
+    </div>
+    <div id="phaseDayNightRoot"></div>
+  </section>
+
+  <section class="section" id="activeTree">
+    <div class="section-head"><h2>Active Day Tree</h2><span class="badge">Moon → Day → Samam → Activity</span></div>
+    <div id="activeTreeRoot"></div>
+  </section>
+
+  <section class="section" id="adhikara">
+    <div class="section-head"><h2>Reference: Daily Adhikara & Padupatchi</h2><span class="badge">Large bird cards</span></div>
+    <div id="adhikaraRoot"></div>
+  </section>
+
+  <section class="section" id="fullTree">
+    <div class="section-head"><h2>Reference: Full Raw Tree</h2><span class="badge">4 cycles × 7 days × 5 Samam × 5 cards</span></div>
+    <div class="tree" id="fullTreeRoot"></div>
+  </section>
+</div>
+
+<script>
+(function(){
+  function closeGeoPopup(){
+    var modal = document.getElementById('geoModal');
+    if(modal) modal.classList.add('hide');
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    var skip = document.getElementById('skipBtn');
+    var close = document.getElementById('closePopupBtn');
+    var modal = document.getElementById('geoModal');
+    if(skip) skip.addEventListener('click', closeGeoPopup);
+    if(close) close.addEventListener('click', closeGeoPopup);
+    if(modal) modal.addEventListener('click', function(e){
+      if(e.target === modal) closeGeoPopup();
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape') closeGeoPopup();
+    });
+  });
+})();
+</script>
+<script src="assets/js/app.js"></script>
 </body>
-
 </html>
